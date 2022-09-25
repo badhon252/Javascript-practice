@@ -162,21 +162,17 @@ fizzBuzz = function (num) {
   //
   // otherwise the function should return the number, or false if no number
   // was provided or the value provided is not a number
-  while (!isNaN(num)) {
-    if (num % 3 === 0 && num % 5 === 0) {
-      return "fizzbuzz";
-    } else if (num % 3 === 0) {
-      return "fizz";
-    } else if (num % 5 === 0) {
-      return "buzz";
-    } else if (num % 3 !== 0 && num % 5 !== 0 && num % 15 !== 0) {
-      return num;
-    } else if (num == null || num == undefined || num == Boolean || num > 1) {
-      return false;
-    } else {
-      return false;
-    }
+
+  if (num % 3 === 0) {
+    return "fizz";
   }
-  return false;
+  if (num % 5 === 0) {
+    return "buzz";
+  }
+  if (num % 3 === 0 && num % 5 === 0) {
+    return "fizzbuzz";
+  } else {
+    return false;
+  }
 };
-console.log(fizzBuzz(22));
+console.log(fizzBuzz(15));

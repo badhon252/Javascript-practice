@@ -127,56 +127,31 @@ num(-10);
 // console.log(fizzBuzz(150));
 // console.log(fizzBuzz(" "));
 
-// var output;
-// function num(i) {
-//   switch (i) {
-//     // case i === null || i === undefined || i === Boolean || i > 1:
-//     //   output = "is not a number!";
-//     //   break;
-
-//     case i % 3 == 0 && i % 5 == 0:
-//       output = "fizzBuzz";
-//       break;
-
-//     case i % 3 == 0:
-//       output = "fizz";
-//       break;
-
-//     case i % 5 == 0:
-//       output = "buzz";
-//       break;
-
-//     default:
-//       false;
-//   }
-// }
-
-// console.log(num(10));
-
-fizzBuzz = function (num) {
-  // write a function that receives a number as its argument;
-  // if the number is divisible by 3, the function should return 'fizz';
-  // if the number is divisible by 5, the function should return 'buzz';
-  // if the number is divisible by 3 and 5, the function should return
-  // 'fizzbuzz';
-  //
-  // otherwise the function should return the number, or false if no number
-  // was provided or the value provided is not a number
-  while (!isNaN(num)) {
-    if (num % 3 === 0 && num % 5 === 0) {
-      return "fizzbuzz";
-    } else if (num % 3 === 0) {
-      return "fizz";
-    } else if (num % 5 === 0) {
-      return "buzz";
-    } else if (num % 3 !== 0 && num % 5 !== 0 && num % 15 !== 0) {
-      return num;
-    } else if (num == null || num == undefined || num == Boolean || num > 1) {
-      return false;
-    } else {
-      return false;
-    }
+var output;
+function num(15) {
+  switch (i) {
+      
+    case (i == null || i == undefined || i == Boolean || i > 1):
+    return "is not a number!";
+    break;
+    
+    case (i % 3 === 0 && i % 5 === 0):
+   return  "fizzBuzz";
+      break;
+           
+    case (i % 3 === 0) :
+   	return "fizz";
+   		break;
+      
+    case (i % 5 === 0) :
+     return "buzz";
+      break;
+ 
+     
+    default: false;
+   
   }
-  return false;
-};
-console.log(fizzBuzz(22));
+  
+}
+
+num()

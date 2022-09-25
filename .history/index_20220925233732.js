@@ -169,14 +169,9 @@ fizzBuzz = function (num) {
       return "fizz";
     } else if (num % 5 === 0) {
       return "buzz";
-    } else if (num % 3 !== 0 && num % 5 !== 0 && num % 15 !== 0) {
-      return num;
-    } else if (num == null || num == undefined || num == Boolean || num > 1) {
-      return false;
     } else {
       return false;
     }
   }
-  return false;
 };
-console.log(fizzBuzz(22));
+console.log(fizzBuzz(150));
