@@ -139,13 +139,13 @@ fizzBuzz = function (num) {
   // was provided or the value provided is not a number
   switch (num) {
     case num % 3 === 0:
-      return "fizz";
+      result = "fizz";
       break;
     case num % 5 === 0:
-      return "buzz";
+      result = "buzz";
       break;
     case num % 15 === 0:
-      return "fizzbuzz";
+      result = "fizzbuzz";
       break;
   }
   return result;
