@@ -153,52 +153,29 @@ num(-10);
 
 // console.log(num(10));
 
-// I tried ternery operators but some issues are poped up!
+fizzBuzz = function (num) {
+  // write a function that receives a number as its argument;
+  // if the number is divisible by 3, the function should return 'fizz';
+  // if the number is divisible by 5, the function should return 'buzz';
+  // if the number is divisible by 3 and 5, the function should return
+  // 'fizzbuzz';
+  //
+  // otherwise the function should return the number, or false if no number
+  // was provided or the value provided is not a number
+  while (!isNaN(num)) {
+    num % 3 === 0 && num % 5 === 0
+      ? "fizzbuzz"
+      : num % 3 === 0
+      ? "fizz"
+      : num % 5 === 0
+      ? "buzz"
+      : num % 3 !== 0 && num % 5 !== 0 && num % 15 !== 0
+      ? num
+      : num === null || num === undefined || num === Boolean || num > 1
+      ? false
+      : true;
+  }
+  return false;
+};
 
-// fizzBuzz = function (num) {
-//   // write a function that receives a number as its argument;
-//   // if the number is divisible by 3, the function should return 'fizz';
-//   // if the number is divisible by 5, the function should return 'buzz';
-//   // if the number is divisible by 3 and 5, the function should return
-//   // 'fizzbuzz';
-//   //
-//   // otherwise the function should return the number, or false if no number
-//   // was provided or the value provided is not a number
-//   while (!isNaN(num)) {
-//     num % 3 === 0 && num % 5 === 0
-//       ? "fizzbuzz"
-//       : num % 3 === 0
-//       ? "fizz"
-//       : num % 5 === 0
-//       ? "buzz"
-//       : num % 3 !== 0 && num % 5 !== 0 && num % 15 !== 0
-//       ? num
-//       : num === null || num === undefined || num === Boolean || num > 1
-//       ? false
-//       : "false";
-
-//     return false;
-//   }
-// };
-
-// console.log(fizzBuzz(15));
-
-// write a function that receives a number as its argument ?
-// function Get(props) {
-//    const [params, setParams] = useState({});
-//    ...
-//    return (
-//     <div>{props.children(params)}</div>
-//    )
-// }
-
-// if the number is divisible by 3, the function should return 'fizz' ?
-let n = Math.floor(Math.random() * 1000 + 1);
-if (n) {
-  var output = "";
-  if (n % 3 == 0) output += "Rock";
-  if (n % 5 == 0) output += "star";
-  console.log(output || n);
-}
-
-// SyntaxError: expected expression, got keyword 'var'
+console.log(fizzBuzz(true));

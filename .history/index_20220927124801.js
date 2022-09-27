@@ -198,7 +198,7 @@ if (n) {
   var output = "";
   if (n % 3 == 0) output += "Rock";
   if (n % 5 == 0) output += "star";
-  console.log(output || n);
+  prompt(output || n);
 }
 
 // SyntaxError: expected expression, got keyword 'var'
