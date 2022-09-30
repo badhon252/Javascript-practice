@@ -28,14 +28,43 @@
 //   `The quick ${color} fox ${way} over the  ${typeOfAnimal} ${animal}`
 // );
 
-function x(a) {
-  console.log(a);
-  console.log(typeof a);
+// function x(a) {
+//   console.log(a);
+//   console.log(typeof a);
+// }
+
+// x({
+//   name: "Khalid",
+//   age: 22,
+// });
+
+// x([1, 2, "3"]);
+
+//DSA practice
+
+// Normal uses without dsa
+
+// var start,
+//   end,
+//   result = 0;
+// function sum(n) {
+//   for (var i = 1; i <= n; i++) {
+//     result += i;
+//   }
+//   return result;
+// }
+// start = performance.now();
+// sum(1000000000);
+// end = performance.now();
+// console.log(end - start);
+
+//DSA
+
+var start, end;
+function sum(n) {
+  return (n / 2) * (n + 1);
 }
-
-x({
-  name: "Khalid",
-  age: 22,
-});
-
-x([1, 2, "3"]);
+start = performance.now();
+sum(1000000000);
+end = performance.now();
+console.log(end - start);
