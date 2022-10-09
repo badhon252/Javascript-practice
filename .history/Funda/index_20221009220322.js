@@ -262,3 +262,14 @@ num(-10);
 // sum(1000000000);
 // end = performance.now();
 // console.log(end - start);
+
+//DSA
+
+var start, end;
+function sum(n) {
+  return (n / 2) * (n + 1);
+}
+start = performance.now();
+sum(1000000000);
+end = performance.now();
+console.log(end - start);
