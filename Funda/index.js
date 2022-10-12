@@ -301,7 +301,7 @@ const person = (...rest) => {
   console.log(typeof country);
   */
 };
-let arr = [1, 2, 3, 4, 5];
+// let arr = [1, 2, 3, 4, 5];
 const person1 = person("Khalid", 22, "Bangladesh", arr);
 // console.log(typeof person1[1]);
 console.log(person1);
