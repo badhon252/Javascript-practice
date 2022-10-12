@@ -290,19 +290,20 @@ num(-10);
 
 const person = (...rest) => {
   return ({ myName, age, country, arr } = { ...rest });
+  /*
+  console.log(`Hello ${myName}`);
+  console.log(typeof myName);
 
-  // console.log(`Hello ${myName}`);
-  // console.log(typeof myName)
+  console.log(`age: ${age}`);
+  console.log(typeof age);
 
-  // console.log(`age: ${age}`);
-  // console.log(typeof age)
-
-  // console.log(`Country ${country}`)
-  // console.log(typeof country)
+  console.log(`Country ${country}`);
+  console.log(typeof country);
+  */
 };
 let arr = [1, 2, 3, 4, 5];
 const person1 = person("Khalid", 22, "Bangladesh", arr);
-console.log(typeof person1[1]);
+// console.log(typeof person1[1]);
 console.log(person1);
 
-console.log(typeof arr);
+// console.log(typeof arr);
