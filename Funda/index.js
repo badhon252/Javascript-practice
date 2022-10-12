@@ -233,32 +233,51 @@ num(-10);
 //   `The quick ${color} fox ${way} over the  ${typeOfAnimal} ${animal}`
 // );
 
-// function x(a) {
-//   console.log(a);
-//   console.log(typeof a);
-// }
+function x(value) {
+  console.log(value);
+  console.log(typeof value);
+}
 
 // x({
 //   name: "Khalid",
 //   age: 22,
 // });
 
-// x([1, 2, "3"]);
+const res = x([1, 2, "3"]);
+console.log(res);
 
-//DSA practice
+// const myName_str = new String("Khalid Hossain");
+// // myName_str;
+// typeof myName_str;
+// const myAge = new Number(22);
+// myAge;
+// typeof myAge;
+// const isLonely = new Boolean(true);
+// isLonely;
+// typeof isLonely;
+// const person = new Array(1, 2, 3, 4, 5, 6);
+// person;
+// typeof person;
 
-// Normal uses without dsa
+// const age = 22;
 
-// var start,
-//   end,
-//   result = 0;
-// function sum(n) {
-//   for (var i = 1; i <= n; i++) {
-//     result += i;
-//   }
-//   return result;
+// age === myAge;
+// typeof age;
+// typeof myAge;
+// typeof myAge.Number;
+
+// const a = 5;
+// const b = "5"
+// a == b
+// a === b
+// const c = [5]
+// a == c
+// a === c
+// const d = {
+//    e : 5,
+//   f : "5"
 // }
-// start = performance.now();
-// sum(1000000000);
-// end = performance.now();
-// console.log(end - start);
+// a ==d.e
+// a === d.e
+// a === d.f
+// a == d.f
