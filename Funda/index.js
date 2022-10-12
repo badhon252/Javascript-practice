@@ -305,4 +305,4 @@ const person1 = person("Khalid", 22, "Bangladesh", arr);
 console.log(typeof person1[1]);
 console.log(person1);
 
-// console.log(typeof arr);
+console.log(typeof arr);
