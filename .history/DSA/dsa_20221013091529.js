@@ -60,18 +60,9 @@ function oldArray(hNum, lNum) {
 
   for (i; i <= lNum; i++) {
     array.push(i);
-    for (let value of arr) {
-      // let missingNum =   ;
-      // console.log(arr);
-      switch ((i, arr)) {
-        case i == arr:
-          console.log(i);
-          break;
-
-        default:
-          console.error("Not working");
-          break;
-      }
+    for(let value of arr){
+      
+      return array === 
     }
   }
 

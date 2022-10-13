@@ -80,3 +80,4 @@ function oldArray(hNum, lNum) {
 // missingNum(firstNumber, lastNumber);
 
 oldArray(firstNumber, lastNumber);
+function a(a, b) {}

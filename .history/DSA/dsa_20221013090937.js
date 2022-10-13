@@ -53,6 +53,9 @@ let lastNumber = Number(newArray.slice(-1));
 console.log("FirstNumber 👉 ", firstNumber);
 console.log("lastNumber 👉 ", lastNumber);
 
+let hNum = firstNumber;
+let lNum = lastNumber;
+
 function oldArray(hNum, lNum) {
   const array = [];
   //oldArr, newArr
@@ -60,23 +63,15 @@ function oldArray(hNum, lNum) {
 
   for (i; i <= lNum; i++) {
     array.push(i);
-    for (let value of arr) {
-      // let missingNum =   ;
-      // console.log(arr);
-      switch ((i, arr)) {
-        case i == arr:
-          console.log(i);
-          break;
-
-        default:
-          console.error("Not working");
-          break;
-      }
-    }
   }
 
+  for (let value of arr) {
+    arr;
+    // const arr = [];
+    // arr.push(array);
+  }
   console.log(array);
 }
 // missingNum(firstNumber, lastNumber);
 
-oldArray(firstNumber, lastNumber);
+oldArray(hNum, lastNumber);

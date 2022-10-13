@@ -47,36 +47,33 @@ const newArray = insertion_Sort(arr);
 
 console.log("array 👉", newArray);
 
-let firstNumber = Number(newArray.slice(0, 1));
-let lastNumber = Number(newArray.slice(-1));
+let firstNumber = newArray.slice(0, 1);
+let lastNumber = newArray.slice(-1);
 
 console.log("FirstNumber 👉 ", firstNumber);
 console.log("lastNumber 👉 ", lastNumber);
 
-function oldArray(hNum, lNum) {
+let hNum = firstNumber;
+let lNum = lastNumber;
+
+function missingNum(hNum, lNum) {
   const array = [];
   //oldArr, newArr
   let i = hNum;
 
+  console.log(String(i));
+
   for (i; i <= lNum; i++) {
     array.push(i);
-    for (let value of arr) {
-      // let missingNum =   ;
-      // console.log(arr);
-      switch ((i, arr)) {
-        case i == arr:
-          console.log(i);
-          break;
-
-        default:
-          console.error("Not working");
-          break;
-      }
-    }
   }
-
+  // console.log(array);
+  // for (let value of arr) {
+  //   (arr)
+  //   // const arr = [];
+  //   // arr.push(array);
+  // }
   console.log(array);
 }
 // missingNum(firstNumber, lastNumber);
 
-oldArray(firstNumber, lastNumber);
+missingNum(Number(firstNumber), Number(lastNumber));

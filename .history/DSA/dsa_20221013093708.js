@@ -63,15 +63,14 @@ function oldArray(hNum, lNum) {
     for (let value of arr) {
       // let missingNum =   ;
       // console.log(arr);
-      switch ((i, arr)) {
-        case i == arr:
-          console.log(i);
-          break;
-
-        default:
-          console.error("Not working");
-          break;
-      }
+      // switch ((i, arr)) {
+      //   case i == arr:
+      //     console.log(i);
+      //     break;
+      //   default:
+      //     console.error("Not working");
+      //     break;
+      // }
     }
   }
 

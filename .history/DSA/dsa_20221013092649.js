@@ -62,7 +62,7 @@ function oldArray(hNum, lNum) {
     array.push(i);
     for (let value of arr) {
       // let missingNum =   ;
-      // console.log(arr);
+      console.log(arr);
       switch ((i, arr)) {
         case i == arr:
           console.log(i);

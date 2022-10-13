@@ -29,7 +29,7 @@ function inputNumber(num) {
 inputNumber();
 */
 
-const arr = [22, 29, 25, 30, 24, 28, 26, 27, 31];
+const arr = [22, 29, 25, 30, 24, 23, 28, 26, 27, 31];
 const insertion_Sort = (nums) => {
   for (let i = 1; i < nums.length; i++) {
     let j = i - 1;
@@ -47,36 +47,32 @@ const newArray = insertion_Sort(arr);
 
 console.log("array 👉", newArray);
 
-let firstNumber = Number(newArray.slice(0, 1));
-let lastNumber = Number(newArray.slice(-1));
+let firstNumber = newArray.slice(0, 1);
+let lastNumber = newArray.slice(-1);
 
 console.log("FirstNumber 👉 ", firstNumber);
 console.log("lastNumber 👉 ", lastNumber);
 
-function oldArray(hNum, lNum) {
-  const array = [];
+let hNum = firstNumber;
+let lNum = lastNumber;
+
+const missingNum = (hNum, lNum) => {
   //oldArr, newArr
-  let i = hNum;
-
-  for (i; i <= lNum; i++) {
-    array.push(i);
-    for (let value of arr) {
-      // let missingNum =   ;
-      // console.log(arr);
-      switch ((i, arr)) {
-        case i == arr:
-          console.log(i);
-          break;
-
-        default:
-          console.error("Not working");
-          break;
-      }
-    }
+  let i = lNum;
+  for (i; i <= hNum; i++) {
+    // const array = [i];
+    console.log(i);
+    // console.log();
+    // return array;
+    console.log("Hello");
   }
-
-  console.log(array);
-}
+  // for (let value of arr) {
+  //   (arr)
+  //   // const arr = [];
+  //   // arr.push(array);
+  // }
+  // console.log(arr);
+};
 // missingNum(firstNumber, lastNumber);
 
-oldArray(firstNumber, lastNumber);
+missingNum(Number(firstNumber), Number(lastNumber));
