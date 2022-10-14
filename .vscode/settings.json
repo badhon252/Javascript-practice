@@ -1,3 +1,4 @@
 {
-  "cSpell.words": ["divs", "nums"]
+  "cSpell.words": ["divs", "nums"],
+  "githubPullRequests.ignoredPullRequestBranches": ["main"]
 }
