@@ -45,7 +45,7 @@ const insertion_Sort = (nums) => {
 };
 const newArray = insertion_Sort(arr);
 
-console.log("New array 👉", newArray);
+console.log("array 👉", newArray);
 
 let firstNumber = Number(newArray.slice(0, 1));
 let lastNumber = Number(newArray.slice(-1));
