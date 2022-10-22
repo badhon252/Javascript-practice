@@ -287,22 +287,26 @@ num(-10);
 // a == d.f
 
 //----Function Practice-------
-
-const person = (...rest) => {
-  return ({ myName, age, country, arr } = { ...rest });
-  /*
-  console.log(`Hello ${myName}`);
-  console.log(typeof myName);
-  console.log(`age: ${age}`);
-  console.log(typeof age);
-  console.log(`Country ${country}`);
-  console.log(typeof country);
-  */
-};
-// let arr = [1, 2, 3, 4, 5];
-const person1 = person("Khalid", 22, "Bangladesh", arr);
-// console.log(typeof person1[1]);
-console.log(person1);
+/**
+ * 
+//  * @param  {...any} rest 
+//  * @returns 
+ */
+// const person = (...rest) => {
+//   return ({ myName, age, country, arr } = { ...rest });
+//   /*
+//   console.log(`Hello ${myName}`);
+//   console.log(typeof myName);
+//   console.log(`age: ${age}`);
+//   console.log(typeof age);
+//   console.log(`Country ${country}`);
+//   console.log(typeof country);
+//   */
+// };
+// // let arr = [1, 2, 3, 4, 5];
+// const person1 = person("Khalid", 22, "Bangladesh", arr);
+// // console.log(typeof person1[1]);
+// console.log(person1);
 
 // console.log(typeof arr);
 
