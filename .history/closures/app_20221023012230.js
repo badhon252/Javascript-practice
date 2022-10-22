@@ -44,7 +44,7 @@ function makeClosure(number) {
 // makeClosure();
 
 function makeClosure() {
-  for (let i = 1; i <= 5; i++) {
+  for (var i = 1; i <= 5; i++) {
     setTimeout(function () {
       console.log(i);
     }, i * 1000);

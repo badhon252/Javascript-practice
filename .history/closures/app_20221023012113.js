@@ -34,20 +34,23 @@ function makeClosure(number) {
 }
  */
 
-// function makeClosure() {
-//   for (let i = 1; i <= 5; i++) {
-//     setTimeout(function (i) {
-//       console.log(i);
-//     }, i * 1000);
-//   }
-// }
-// makeClosure();
-
 function makeClosure() {
   for (let i = 1; i <= 5; i++) {
-    setTimeout(function () {
+    setTimeout(function (i) {
       console.log(i);
     }, i * 1000);
+  }
+}
+makeClosure();
+
+function makeClosure() {
+  for (var i = 1; i <= 5; i++) {
+    function close(n) {
+      setTimeout(function () {
+        console.log(n);
+      }, n * 1000);
+    }
+    close(i);
   }
 }
 makeClosure();
