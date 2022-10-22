@@ -310,9 +310,7 @@ num(-10);
 
 // console.log(typeof arr);
 
-/*
- *Reverse a function in JavaScript using recursion.
- */
+/*  Reverse a function in JavaScript using recursion.*/
 
 function reverseStr(A) {
   let rev = A.trim();
