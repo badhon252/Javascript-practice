@@ -233,22 +233,18 @@ num(-10);
 //   `The quick ${color} fox ${way} over the  ${typeOfAnimal} ${animal}`
 // );
 
-//// Function practice
+function x(value) {
+  console.log(value);
+  console.log(typeof value);
+}
 
-// function x(value) {
-//   // 'value' is parameter
-//   console.log(value);
-//   console.log(value.name);
-//   console.log(typeof value);
-// }
+const res = x([1, 2, "3"]);
+console.log(res);
 
-// const res = x([1, 2, "3"]);
-// console.log(res);
-
-// x({
-//   name: "Khalid",
-//   age: 22,
-// });
+x({
+  name: "Khalid",
+  age: 22,
+});
 
 // const myName_str = new String("Khalid Hossain");
 // // myName_str;
@@ -285,34 +281,3 @@ num(-10);
 // a === d.e
 // a === d.f
 // a == d.f
-
-//----Function Practice-------
-
-const person = (...rest) => {
-  return ({ myName, age, country, arr } = { ...rest });
-  /*
-  console.log(`Hello ${myName}`);
-  console.log(typeof myName);
-  console.log(`age: ${age}`);
-  console.log(typeof age);
-  console.log(`Country ${country}`);
-  console.log(typeof country);
-  */
-};
-// let arr = [1, 2, 3, 4, 5];
-const person1 = person("Khalid", 22, "Bangladesh", arr);
-// console.log(typeof person1[1]);
-console.log(person1);
-
-// console.log(typeof arr);
-
-// Reverse a function in JavaScript using recursion.
-
-function reverseStr(A) {
-  let rev = A.trim();
-  let revStr = A.split(" ").reverse().join(" ");
-  console.log(revStr);
-}
-reverseStr(
-  "qxkpvo  f   w vdg t wqxy ln mbqmtwwbaegx   mskgtlenfnipsl bddjk znhksoewu zwh bd fqecoskmo"
-);

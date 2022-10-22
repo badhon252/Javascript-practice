@@ -11,7 +11,7 @@ console.log(end - start);
 */
 
 /*
- * @Programmer: Khalid Hossain
+ * Programmer: @Khalid
 
  *** User will give input with the firstNumber and the last number, if needed, I have to sort the data first!
  *** Then, I have to find the missing number from the input list;
@@ -29,7 +29,7 @@ function inputNumber(num) {
 inputNumber();
 */
 
-const arr = [1, 3, 10, 2, 5, 6, 7, 8, 9];
+const arr = [22, 29, 25, 30, 24, 23, 28, 26, 27, 31];
 const insertion_Sort = (nums) => {
   for (let i = 1; i < nums.length; i++) {
     let j = i - 1;
@@ -45,31 +45,31 @@ const insertion_Sort = (nums) => {
 };
 const newArray = insertion_Sort(arr);
 
-console.log("New array 👉", newArray);
+console.log("array 👉", newArray);
 
-let firstNumber = Number(newArray.slice(0, 1));
-let lastNumber = Number(newArray.slice(-1));
+let firstNumber = newArray.slice(0, 1);
+let lastNumber = newArray.slice(-1);
 
 console.log("FirstNumber 👉 ", firstNumber);
 console.log("lastNumber 👉 ", lastNumber);
 
-function oldArray(hNum, lNum) {
-  const array = [];
+let hNum = firstNumber;
+let lNum = lastNumber;
+
+const missingNum = (hNum, lNum) => {
   //oldArr, newArr
-  let i = hNum;
-
-  console.log("i = ", i);
-  for (i; i <= lNum; i++) {
-    array.push(i);
-    for (let value of arr) {
-      // while (value === i) {
-      //   console.log("value 👉", value);
-      // }
-    }
+  for (let i = lNum; i <= hNum; i++) {
+    const array = [i];
+    console.log(i);
+    return array;
   }
-  console.log(array);
-}
-
+  console.log(hNum, lNum);
+  // for (let value of arr) {
+  //   (arr)
+  //   // const arr = [];
+  //   // arr.push(array);
+  // }
+  // console.log(arr);
+};
 // missingNum(firstNumber, lastNumber);
-
-oldArray(firstNumber, lastNumber);
+missingNum(1, 2);

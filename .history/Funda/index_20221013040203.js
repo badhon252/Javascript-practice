@@ -293,8 +293,10 @@ const person = (...rest) => {
   /*
   console.log(`Hello ${myName}`);
   console.log(typeof myName);
+
   console.log(`age: ${age}`);
   console.log(typeof age);
+
   console.log(`Country ${country}`);
   console.log(typeof country);
   */
@@ -305,14 +307,3 @@ const person1 = person("Khalid", 22, "Bangladesh", arr);
 console.log(person1);
 
 // console.log(typeof arr);
-
-// Reverse a function in JavaScript using recursion.
-
-function reverseStr(A) {
-  let rev = A.trim();
-  let revStr = A.split(" ").reverse().join(" ");
-  console.log(revStr);
-}
-reverseStr(
-  "qxkpvo  f   w vdg t wqxy ln mbqmtwwbaegx   mskgtlenfnipsl bddjk znhksoewu zwh bd fqecoskmo"
-);

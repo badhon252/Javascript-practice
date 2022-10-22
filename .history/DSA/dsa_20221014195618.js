@@ -45,7 +45,7 @@ const insertion_Sort = (nums) => {
 };
 const newArray = insertion_Sort(arr);
 
-console.log("New array 👉", newArray);
+console.log("array 👉", newArray);
 
 let firstNumber = Number(newArray.slice(0, 1));
 let lastNumber = Number(newArray.slice(-1));
@@ -58,10 +58,10 @@ function oldArray(hNum, lNum) {
   //oldArr, newArr
   let i = hNum;
 
-  console.log("i = ", i);
   for (i; i <= lNum; i++) {
     array.push(i);
     for (let value of arr) {
+      console.log(arr);
       // while (value === i) {
       //   console.log("value 👉", value);
       // }

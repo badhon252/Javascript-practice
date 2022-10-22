@@ -289,30 +289,20 @@ num(-10);
 //----Function Practice-------
 
 const person = (...rest) => {
-  return ({ myName, age, country, arr } = { ...rest });
-  /*
-  console.log(`Hello ${myName}`);
-  console.log(typeof myName);
-  console.log(`age: ${age}`);
-  console.log(typeof age);
-  console.log(`Country ${country}`);
-  console.log(typeof country);
-  */
+  return ({ myName, age, country } = { ...rest });
+
+  // console.log(`Hello ${myName}`);
+  // console.log(typeof myName)
+
+  // console.log(`age: ${age}`);
+  // console.log(typeof age)
+
+  // console.log(`Country ${country}`)
+  // console.log(typeof country)
 };
-// let arr = [1, 2, 3, 4, 5];
 const person1 = person("Khalid", 22, "Bangladesh", arr);
-// console.log(typeof person1[1]);
+console.log(typeof person1);
 console.log(person1);
 
+const arr = [1, 2, 3, 4, 5];
 // console.log(typeof arr);
-
-// Reverse a function in JavaScript using recursion.
-
-function reverseStr(A) {
-  let rev = A.trim();
-  let revStr = A.split(" ").reverse().join(" ");
-  console.log(revStr);
-}
-reverseStr(
-  "qxkpvo  f   w vdg t wqxy ln mbqmtwwbaegx   mskgtlenfnipsl bddjk znhksoewu zwh bd fqecoskmo"
-);
