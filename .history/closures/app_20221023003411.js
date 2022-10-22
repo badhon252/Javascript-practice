@@ -23,22 +23,9 @@ closureFunction("Khalid")();
 
 /**
  *! makes an closures alongs with the number that takes to print output, output and the delay time to print should be same
- *? lets assume that, i have to print 1 to 10 numbers, but i have to print 1 after 1 second, 2 after 2 second, 3 after 3 second and so on
-
-function makeClosure(number) {
-  for (var i = 1; i <= number; i++) {
-    setTimeout(function (i) {
-      console.log(i);
-    }, 1000 * i, i);
-  }
-}
+*? lets assume that, i have to print 1 to 10 numbers, but i have to print 1 after 1 second, 2 after 2 second, 3 after 3 second and so on
  */
 
-function makeClosure() {
-  for (let i = 1; i <= 5; i++) {
-    setTimeout(function (i) {
-      console.log(i);
-    }, i * 1000);
-  }
+function makeClosure(number){
+for(var i=1; i<=number; i++))
 }
-makeClosure();

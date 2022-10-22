@@ -34,11 +34,11 @@ function makeClosure(number) {
 }
  */
 
-function makeClosure() {
-  for (let i = 1; i <= 5; i++) {
+function makeClosure(number) {
+  for (var i = 1; i <= number; i++) {
     setTimeout(function (i) {
       console.log(i);
-    }, i * 1000);
+    }, 1000);
   }
 }
-makeClosure();
+makeClosure(10);
