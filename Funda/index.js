@@ -307,6 +307,7 @@ console.log(person1);
 // console.log(typeof arr);
 
 // Reverse a function in JavaScript using recursion.
+
 function reverseStr(A) {
   let rev = A.trim();
   let revStr = A.split(" ").reverse().join(" ");
