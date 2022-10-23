@@ -53,12 +53,8 @@ function makeClosure(number) {
 // makeClosure();
 
 function makeClosure() {
-  for (let i = 1; i <= 5; i++) {
-    // let time = i * 1000;
-    setTimeout(function log() {
-      console.log(i);
-    }, i * 1000);
+  setTimeout(log, time);
+  function log() {
+    console.log(i);
   }
 }
-
-makeClosure();
