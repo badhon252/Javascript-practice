@@ -55,9 +55,10 @@ function makeClosure(number) {
 function makeClosure() {
   for (let i = 1; i <= 5; i++) {
     // let time = i * 1000;
+    var j = i++;
     setTimeout(function log() {
       console.log(i);
-    }, i * 1000);
+    }, j * 1000);
   }
 }
 

@@ -57,6 +57,7 @@ function makeClosure() {
     // let time = i * 1000;
     setTimeout(function log() {
       console.log(i);
+      i++;
     }, i * 1000);
   }
 }
