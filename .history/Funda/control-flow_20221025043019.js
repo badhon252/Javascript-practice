@@ -68,10 +68,6 @@ function starShape(n) {
 starShape(5);
  */
 
-/**
- * ! Didn't finished yet ,
- *? Mirrored Right Triangle Star Pattern
- */
 function triangleStar(n) {
   let m = 1;
   for (let i = n; i >= 1; i--) {

@@ -54,11 +54,10 @@ function starShape(param) {
 starShape(10);
  */
 
-/**
-  //!left Triangle Star Pattern
+//!left Triangle Star Pattern
 function starShape(n) {
   for (let i = 1; i <= n; i++) {
-    for (let j = n; j >= i; j--) {
+    for (let j = 1; j <= n; j++) {
       document.write("*" + " ");
     }
     document.write("<br>");
@@ -66,25 +65,3 @@ function starShape(n) {
   }
 }
 starShape(5);
- */
-
-/**
- * ! Didn't finished yet ,
- *? Mirrored Right Triangle Star Pattern
- */
-function triangleStar(n) {
-  let m = 1;
-  for (let i = n; i >= 1; i--) {
-    for (let j = 1; j <= i - 1; j++) {
-      document.write(" ");
-    }
-    for (let k = 1; k <= m; k++) {
-      document.write(" *");
-    }
-    document.write("<br>");
-    m++;
-    // document.write(" ");
-  }
-}
-
-triangleStar(prompt());
