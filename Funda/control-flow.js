@@ -87,4 +87,4 @@ function triangleStar(n) {
   }
 }
 
-triangleStar(prompt());
+triangleStar(5);
