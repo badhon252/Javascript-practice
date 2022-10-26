@@ -73,7 +73,7 @@ starShape(5);
  *? Mirrored Right Triangle Star Pattern
  */
 function triangleStar(n) {
-  for (var i = 1; i <= n; i++) {
+  for (let i = 1; i <= n; i++) {
     setTimeout(function () {
       document.write("<br>");
       for (let j = 1; j <= i; j++) {
