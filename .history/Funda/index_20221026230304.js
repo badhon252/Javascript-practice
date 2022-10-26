@@ -316,7 +316,7 @@ num(-10);
 
 function reverseStr(A) {
   let rev = A.trim();
-  let revStr = rev.split(" ").reverse().join(" ");
+  let revStr = A.split(" ").reverse().join(" ");
   console.log(revStr);
 }
 reverseStr(

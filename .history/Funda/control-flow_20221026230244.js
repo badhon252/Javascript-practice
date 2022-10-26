@@ -81,6 +81,7 @@ starShape(5);
       }, 1000);
     }
   }
+
   
   triangleStar(5);
   
