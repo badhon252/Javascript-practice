@@ -319,7 +319,6 @@ function reverseStr(A) {
   let revStr = rev.split(" ").reverse().join(" ");
   console.log(revStr);
 }
-
 reverseStr(
   "qxkpvo  f   w vdg t wqxy ln mbqmtwwbaegx   mskgtlenfnipsl bddjk znhksoewu zwh bd fqecoskmo"
 );
