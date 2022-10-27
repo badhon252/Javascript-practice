@@ -90,9 +90,9 @@ triangleStar(5);
 */
 
 /**
- *! Write a function that prints Mirrored Right Triangle Star Pattern in the browser.
  */
 
+Write a function that prints Mirrored Right Triangle Star Pattern in the browser.
 function triangleStar(n) {
   for (let i = 1; i <= n; i++) {
     for (let j = n; j >= i; j--) {

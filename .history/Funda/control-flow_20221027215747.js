@@ -90,19 +90,6 @@ triangleStar(5);
 */
 
 /**
- *! Write a function that prints Mirrored Right Triangle Star Pattern in the browser.
  */
 
-function triangleStar(n) {
-  for (let i = 1; i <= n; i++) {
-    for (let j = n; j >= i; j--) {
-      document.write(" ");
-    }
-    for (let k = 1; k <= i; k++) {
-      document.write("*");
-    }
-    document.write("<br>");
-  }
-}
-
-triangleStar(5);
+// Write a function that prints Mirrored Right Triangle Star Pattern
