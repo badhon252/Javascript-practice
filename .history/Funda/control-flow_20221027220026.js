@@ -99,7 +99,7 @@ function triangleStar(n) {
       document.write(" ");
     }
     for (let k = 1; k <= i; k++) {
-      document.write("*");
+      document.write("* ");
     }
     document.write("<br>");
   }

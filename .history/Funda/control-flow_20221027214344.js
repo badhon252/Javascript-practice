@@ -57,51 +57,29 @@ starShape(10);
 /**
  //!left Triangle Star Pattern
  function starShape(n) {
-   for (let i = 1; i <= n; i++) {
-     for (let j = n; j >= i; j--) {
-       document.write("*" + " ");
-      }
-      document.write("<br>");
-      // document.write(" ");
-    }
-  }
-  starShape(5);
   */
+  for (let i = 1; i <= n; i++) {
+    for (let j = n; j >= i; j--) {
+      document.write("*" + " ");
+    }
+    document.write("<br>");
+    // document.write(" ");
+  }
+}
+starShape(5);
 
 /**
  * ! Didn't finished yet ,
  *? Mirrored Right Triangle Star Pattern
- function triangleStar(n) {
-   for (let i = 1; i <= n; i++) {
+ */
+function triangleStar(n) {
+  for (var i = 1; i <= n; i++) {
     setTimeout(function () {
       document.write("<br>");
-      for (let j = 1; j <= n; j++) {
+      for (let j = 1; j <= i; j++) {
         document.write(" *");
-        for (let k = n; k >= i; k--) {
-          document.write(" ");
-        }
       }
-    }, 200);
-  }
-}
-
-triangleStar(5);
-
-*/
-
-/**
- *! Write a function that prints Mirrored Right Triangle Star Pattern in the browser.
- */
-
-function triangleStar(n) {
-  for (let i = 1; i <= n; i++) {
-    for (let j = n; j >= i; j--) {
-      document.write(" ");
-    }
-    for (let k = 1; k <= i; k++) {
-      document.write("*");
-    }
-    document.write("<br>");
+    }, 1000);
   }
 }
 
