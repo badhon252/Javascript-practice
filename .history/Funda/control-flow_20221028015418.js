@@ -117,19 +117,8 @@ triangleStar(5);
 // }
 
 // triangleStar(5);
-let count = 0;
-function increase() {
-  document.getElementById("btn").addEventListener("click", function () {
-    console.log(++count);
-  });
-}
-function decrease() {
-  // let count = 0;
-  document.getElementById("btn1").addEventListener("click", function () {
-    console.log(--count);
-  });
-}
 
-increase();
-
-decrease();
+document.getElementById("btn").addEventListener("click", function () {
+  let count = 0;
+  console.log(++count);
+});

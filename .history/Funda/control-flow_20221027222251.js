@@ -71,8 +71,9 @@ starShape(10);
 /**
  * ! Didn't finished yet ,
  *? Mirrored Right Triangle Star Pattern
- function triangleStar(n) {
-   for (let i = 1; i <= n; i++) {
+ */
+function triangleStar(n) {
+  for (let i = 1; i <= n; i++) {
     setTimeout(function () {
       document.write("<br>");
       for (let j = 1; j <= n; j++) {
@@ -87,49 +88,20 @@ starShape(10);
 
 triangleStar(5);
 
-
 /**
  *! Write a function that prints Mirrored Right Triangle Star Pattern in the browser.
  */
 
-// function triangleStar1(n) {
-//   for (let i = 1; i <= n; i++) {
-//     for (let j = n; j >= i; j--) {
-//       document.write("  ");
-//     }
-//     document.write("<br>");
-//   }
-// }
-
-// triangleStar1(5);
-
-//===================================================
-// function triangleStar(n) {
-//   for (let i = 1; i <= n; i++) {
-//     for (let j = n; j >= i; j--) {
-//       document.write("  ");
-//     }
-//     for (let j = n; j >= 1; j--) {
-//       document.write("*");
-//     }
-//     document.write("<br>");
-//   }
-// }
-
-// triangleStar(5);
-let count = 0;
-function increase() {
-  document.getElementById("btn").addEventListener("click", function () {
-    console.log(++count);
-  });
-}
-function decrease() {
-  // let count = 0;
-  document.getElementById("btn1").addEventListener("click", function () {
-    console.log(--count);
-  });
+function triangleStar(n) {
+  for (let i = 1; i <= n; i++) {
+    for (let j = n; j >= i; j--) {
+      document.write("*");
+    }
+    // for (let k = 1; k <= i; k++) {
+    //   document.write("*");
+    // }
+    document.write("<br>");
+  }
 }
 
-increase();
-
-decrease();
+triangleStar(5);
