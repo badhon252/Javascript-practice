@@ -117,3 +117,25 @@ triangleStar(5);
 // }
 
 // triangleStar(5);
+let count = 0;
+let res = document.getElementById("res");
+function increase() {
+  document.getElementById("btn").addEventListener("click", function () {
+    let result = !(count > 0) ? count++ : "Value can't be negetive number";
+    res.innerText = result;
+    console.log(result);
+  });
+}
+function decrease() {
+  // let count = 0;
+  document.getElementById("btn1").addEventListener("click", function () {
+    let result = count > 0 ? --count : "Value can't be negetive number";
+    res.innerText = result;
+    console.log(`${result}`);
+    console.log(typeof result);
+  });
+}
+
+increase();
+
+decrease();
