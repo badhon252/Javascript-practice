@@ -138,8 +138,10 @@ function decrease() {
   });
 }
 
-increase();
+increase(() => typeof result);
 
-decrease();
+decrease(() => typeof result);
 
-console.log(typeof result);
+// function x() {
+//   console.log(typeof result);
+// }
