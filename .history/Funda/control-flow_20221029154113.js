@@ -126,9 +126,7 @@ function increase() {
 function decrease() {
   // let count = 0;
   document.getElementById("btn1").addEventListener("click", function () {
-    let result = count > 0 ? --count : "Value can't be negetive number";
-    console.log(`(${count} - ${--count}) ${result}`);
-    console.log(typeof result);
+    console.log(count > 0 ? --count : "Value can't be negetive number");
   });
 }
 
