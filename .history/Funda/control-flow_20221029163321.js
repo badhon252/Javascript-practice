@@ -121,8 +121,8 @@ let count = 0;
 let res = document.getElementById("res");
 function increase() {
   document.getElementById("btn").addEventListener("click", function () {
-    let result = !(count < 0) ? ++count : "Value can't be a negetive number";
-    res.innerHTML = result;
+    let result = !(count < 0) ? count++ : "Value can't be a negetive number";
+    res.innerText = result;
     console.log(result);
     return result;
   });
@@ -138,10 +138,9 @@ function decrease() {
   });
 }
 
-increase(() => typeof result);
+increase(x);
 
-decrease(() => typeof result);
-
-// function x() {
-//   console.log(typeof result);
-// }
+decrease(x);
+function x() {
+  console.log(typeof result);
+}
