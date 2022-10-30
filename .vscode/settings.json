@@ -1,4 +1,5 @@
 {
   "cSpell.words": ["divs", "nums"],
-  "githubPullRequests.ignoredPullRequestBranches": ["main"]
+  "githubPullRequests.ignoredPullRequestBranches": ["main"],
+  "livePreview.defaultPreviewPath": "/home/khalid/Desktop/Practice/JavaScript/project/index.html"
 }
