@@ -1,9 +1,12 @@
 /**
- *! It's a tweeter's tweet box for limit or modify them.
+ *
  */
+function strMethos() {}
+
+strMethos();
 
 document.getElementById("btn").addEventListener("click", function () {
+  return (document.getElementById("res").innerHTML = limit);
   let tweet = document.getElementById("input").value;
   var limit = tweet.slice(0, 240);
-  document.getElementById("res").innerHTML = `NewsFeed:  ${limit}`;
 });

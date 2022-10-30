@@ -1,6 +1,9 @@
 /**
- *! It's a tweeter's tweet box for limit or modify them.
+ *
  */
+function strMethos() {}
+
+strMethos();
 
 document.getElementById("btn").addEventListener("click", function () {
   let tweet = document.getElementById("input").value;
