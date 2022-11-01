@@ -6,6 +6,6 @@ document.getElementById("btn").addEventListener("click", function () {
   let tweet = document.getElementById("input").value;
   var limit = tweet.slice(0, 240);
   document.getElementById("res").innerHTML = `NewsFeed: <br> ${
-    limit.charAt(0).toUpperCase() + limit.slice(1)
+    limit.charAt(0).toUpperCase() + limit.slice(1)()
   }`;
 });
