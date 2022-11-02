@@ -85,11 +85,6 @@ person1.fullInfo();
 eamin.run();
 */
 
-/**
- *! Building same object model using class & constructors, besides prototypes.
- *! Object define using class key and Constructor functions.
- * Class key is a syntactic sugar of constructor functions.
- */
 class Person {
   constructor(name, age) {
     this.name = name;
@@ -117,6 +112,6 @@ class Person {
 
 const person1 = new Person("Khalid", 22);
 const person2 = new Person("Eamin", 22);
-console.log(person1.name);
+console.log(person1.eat());
 person1.play();
 person2.run();
