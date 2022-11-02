@@ -7,7 +7,7 @@
 
 const personMethods = {
   eat() {
-    console.log(`${this.name} is eating.`); //personMethods is a child of Person because of references;
+    console.log(`${name} is eating.`);
   },
   sleep() {
     console.log(`${this.name} is sleeping.`);

@@ -7,13 +7,13 @@
 
 const personMethods = {
   eat() {
-    console.log(`${this.name} is eating.`); //personMethods is a child of Person because of references;
+    console.log("Person is eating.");
   },
   sleep() {
-    console.log(`${this.name} is sleeping.`);
+    console.log("Person is sleeping.");
   },
   play() {
-    console.log(`${this.name} is playing.`);
+    console.log("Person is playing.");
   },
 };
 
@@ -25,15 +25,4 @@ function Person(name, age) {
   person.eat = personMethods.eat;
   person.sleep = personMethods.sleep;
   person.play = personMethods.play;
-  return person;
 }
-const person1 = Person("Khalid", 22);
-const person2 = Person("Badhon", 23);
-
-// console.log(person1);
-// console.log(person2);
-
-person1.eat();
-person1.sleep();
-
-person2.play();
