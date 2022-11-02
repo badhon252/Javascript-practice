@@ -19,9 +19,7 @@ const personMethods = {
 };
 
 function Person(name, age) {
-  //   let person = Object.create(personMethods);
-
-  let person = {};
+  let person = Object.create(personMethods);
   person.name = name;
   person.age = age;
 

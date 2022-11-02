@@ -25,9 +25,9 @@ function Person(name, age) {
   person.name = name;
   person.age = age;
 
-  person.eat = personMethods.eat;
-  person.sleep = personMethods.sleep;
-  person.play = personMethods.play;
+  //   person.eat = personMethods.eat;
+  //   person.sleep = personMethods.sleep;
+  //   person.play = personMethods.play;
   return person;
 }
 const person1 = Person("Khalid", 22);
