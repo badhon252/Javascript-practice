@@ -26,6 +26,7 @@ function Person(name, age) {
 
   return person;
 }
+person2.play();
 const person1 = Person("Khalid", 22);
 const person2 = Person("Badhon", 23);
 
@@ -34,5 +35,3 @@ const person2 = Person("Badhon", 23);
 
 person1.eat();
 person1.sleep();
-
-person2.play();

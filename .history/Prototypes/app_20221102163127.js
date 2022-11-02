@@ -23,8 +23,6 @@ function Person(name, age) {
 
   person.name = name;
   person.age = age;
-
-  return person;
 }
 const person1 = Person("Khalid", 22);
 const person2 = Person("Badhon", 23);
