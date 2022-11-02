@@ -86,9 +86,7 @@ eamin.run();
 */
 
 /**
- *! Building same object model using class & constructors, besides prototypes.
  *! Object define using class key and Constructor functions.
- * Class key is a syntactic sugar of constructor functions.
  */
 class Person {
   constructor(name, age) {
