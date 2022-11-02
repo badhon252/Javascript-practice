@@ -68,17 +68,21 @@ Person.prototype = {
   fullInfo() {
     console.log(`${this.name} is ${this.age} years old.`);
   },
-  run() {
-    console.log(`${this.name} is running.`);
-  },
 };
 
 const person1 = Person("Khalid", 22);
-const eamin = Person("Eamin", 22);
 
 person1.eat();
 person1.sleep();
 person1.practice();
 
 person1.fullInfo();
-eamin.run();
+
+//! writing a function that prints 1-10.
+function printNumbers() {
+  for (let i = 1; i <= 10; i++) {
+    console.log(i);
+  }
+}
+
+printNumbers();

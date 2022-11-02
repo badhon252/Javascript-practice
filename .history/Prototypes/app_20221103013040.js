@@ -74,11 +74,10 @@ Person.prototype = {
 };
 
 const person1 = Person("Khalid", 22);
-const eamin = Person("Eamin", 22);
 
 person1.eat();
 person1.sleep();
 person1.practice();
 
 person1.fullInfo();
-eamin.run();
+person1.run();

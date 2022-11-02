@@ -81,4 +81,4 @@ person1.sleep();
 person1.practice();
 
 person1.fullInfo();
-eamin.run();
+person1.run();
