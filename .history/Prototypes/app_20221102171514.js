@@ -44,10 +44,13 @@ function Person(name, age) {
   let person = Object.create(Person.prototype);
 
   console.log(person);
-  console.log(person.age); //! i need to show the age. urgently needed fixed!
+  console.log(person);
 
   person.name = name;
   person.age = age;
+  person.fullDetail ()=> {
+    console.log(`${this.name} is ${this.age} years old.`);
+  }
 
   return person;
 }
@@ -65,9 +68,6 @@ Person.prototype = {
   practice() {
     console.log(`${this.name} is practicing.`);
   },
-  fullInfo() {
-    console.log(`${this.name} is ${this.age} years old.`);
-  },
 };
 
 const person1 = Person("Khalid", 22);
@@ -75,5 +75,3 @@ const person1 = Person("Khalid", 22);
 person1.eat();
 person1.sleep();
 person1.practice();
-
-person1.fullInfo();
