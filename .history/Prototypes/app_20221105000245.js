@@ -1,5 +1,3 @@
-"use strict";
-
 // const Persons = new Array();
 // Persons.push("Badhon");
 //
@@ -124,30 +122,7 @@ person2.run();
 
  */
 
-/*
-function Workshop(teacher, Message) {
-  this.teacher = teacher;
-  this.msg = Message;
-  // console.log(this.teacher);
-  // console.log(this.msg);
-}
-// console.log(Workshop);
-// console.log(Workshop.constructor.name);
-Workshop.prototype.ask = function () {
-  console.log(this.teacher, "said that,", this.msg);
-};
-// console.dir(Workshop.prototype.ask);
-const workshop1 = new Workshop(
-  "Khalid",
-  "'Persistance is the key to success!'"
-);
-// Workshop.prototype.ask();
-
-// console.log(workshop1);
-workshop1.ask();
-*/
-
-// ? 1. Create a constructor function called Workshop that receives a teacher and a list of students.
+//? 1. Create a constructor function called Workshop that receives a teacher and a list of students.
 function Workshop(teacher, students) {
   this.teacher = teacher;
   this.students = students;
@@ -163,6 +138,6 @@ const workshop = new Workshop("Khalid", [
   "Rakib",
   "Rakibul",
 ]);
-// workshop();
+workshop();
 
 console.log(workshop);

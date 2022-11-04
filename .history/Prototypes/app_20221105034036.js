@@ -163,6 +163,6 @@ const workshop = new Workshop("Khalid", [
   "Rakib",
   "Rakibul",
 ]);
-// workshop();
+workshop();
 
 console.log(workshop);

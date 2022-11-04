@@ -124,6 +124,26 @@ person2.run();
 
  */
 
+//? 1. Create a constructor function called Workshop that receives a teacher and a list of students.
+// function Workshop(teacher, students) {
+//   this.teacher = teacher;
+//   this.students = students;
+// }
+
+// Workshop.prototype.ask = function () {
+//   console.log(this.teacher, this.students);
+// };
+
+// const workshop = new Workshop("Khalid", [
+//   "Badhon",
+//   "Eamin",
+//   "Rakib",
+//   "Rakibul",
+// ]);
+// workshop();
+
+// console.log(workshop);
+
 /*
 function Workshop(teacher, Message) {
   this.teacher = teacher;
@@ -146,23 +166,3 @@ const workshop1 = new Workshop(
 // console.log(workshop1);
 workshop1.ask();
 */
-
-// ? 1. Create a constructor function called Workshop that receives a teacher and a list of students.
-function Workshop(teacher, students) {
-  this.teacher = teacher;
-  this.students = students;
-}
-
-Workshop.prototype.ask = function () {
-  console.log(this.teacher, this.students);
-};
-
-const workshop = new Workshop("Khalid", [
-  "Badhon",
-  "Eamin",
-  "Rakib",
-  "Rakibul",
-]);
-// workshop();
-
-console.log(workshop);

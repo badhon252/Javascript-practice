@@ -147,22 +147,22 @@ const workshop1 = new Workshop(
 workshop1.ask();
 */
 
-// ? 1. Create a constructor function called Workshop that receives a teacher and a list of students.
-function Workshop(teacher, students) {
-  this.teacher = teacher;
-  this.students = students;
-}
+//? 1. Create a constructor function called Workshop that receives a teacher and a list of students.
+// function Workshop(teacher, students) {
+//   this.teacher = teacher;
+//   this.students = students;
+// }
 
-Workshop.prototype.ask = function () {
-  console.log(this.teacher, this.students);
-};
+// Workshop.prototype.ask = function () {
+//   console.log(this.teacher, this.students);
+// };
 
-const workshop = new Workshop("Khalid", [
-  "Badhon",
-  "Eamin",
-  "Rakib",
-  "Rakibul",
-]);
+// const workshop = new Workshop("Khalid", [
+//   "Badhon",
+//   "Eamin",
+//   "Rakib",
+//   "Rakibul",
+// ]);
 // workshop();
 
-console.log(workshop);
+// console.log(workshop);
