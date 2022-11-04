@@ -63,7 +63,6 @@ function makeClosure(number) {
 
 // makeClosure();
 
-/*
 //! Practicing Scopes
 //? Scope is the area where the variable is accessible
 
@@ -81,11 +80,9 @@ function scope() {
   x();
 
   console.log(global_scope);
-  // console.log(block_scope); //? ReferenceError: block_scope is not defined
+  console.log(block_scope);
 }
 scope();
-*/
-
 // Create an anonymous function expression that gets invoked immediately,
 // and assign its *return value* to a variable. This approach "cuts out the
 // middleman" of the named `makeWhatever` function reference.
@@ -114,10 +111,10 @@ var counter = (function () {
 // `counter` is an object with properties, which in this case happen to be
 // methods.
 
-console.log(counter.get()); // 0
-console.log(counter.set(3)); // undefined
-console.log(counter.increment()); // 4
-console.log(counter.increment()); // 5
+counter.get(); // 0
+counter.set(3);
+counter.increment(); // 4
+counter.increment(); // 5
 
-console.log(counter.i); // undefined (`i` is not a property of the returned object)
-// console.log(i); // ReferenceError: i is not defined (it only exists inside the closure)
+counter.i; // undefined (`i` is not a property of the returned object)
+i; // ReferenceError: i is not defined (it only exists inside the closure)

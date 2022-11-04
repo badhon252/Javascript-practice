@@ -115,9 +115,9 @@ var counter = (function () {
 // methods.
 
 console.log(counter.get()); // 0
-console.log(counter.set(3)); // undefined
-console.log(counter.increment()); // 4
-console.log(counter.increment()); // 5
+console.log(counter.set(3);)
+console.log(counter.increment());; // 4
+console.log(counter.increment());; // 5
 
 console.log(counter.i); // undefined (`i` is not a property of the returned object)
-// console.log(i); // ReferenceError: i is not defined (it only exists inside the closure)
+// i; // ReferenceError: i is not defined (it only exists inside the closure)

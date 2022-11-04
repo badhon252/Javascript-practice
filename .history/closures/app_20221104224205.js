@@ -120,4 +120,4 @@ console.log(counter.increment()); // 4
 console.log(counter.increment()); // 5
 
 console.log(counter.i); // undefined (`i` is not a property of the returned object)
-// console.log(i); // ReferenceError: i is not defined (it only exists inside the closure)
+console.log(i); // ReferenceError: i is not defined (it only exists inside the closure)

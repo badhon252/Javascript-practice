@@ -114,10 +114,10 @@ var counter = (function () {
 // `counter` is an object with properties, which in this case happen to be
 // methods.
 
-console.log(counter.get()); // 0
-console.log(counter.set(3)); // undefined
-console.log(counter.increment()); // 4
-console.log(counter.increment()); // 5
+console.log(counter.get();) // 0
+counter.set(3);
+counter.increment(); // 4
+counter.increment(); // 5
 
-console.log(counter.i); // undefined (`i` is not a property of the returned object)
-// console.log(i); // ReferenceError: i is not defined (it only exists inside the closure)
+counter.i; // undefined (`i` is not a property of the returned object)
+// i; // ReferenceError: i is not defined (it only exists inside the closure)
