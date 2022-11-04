@@ -147,7 +147,7 @@ const workshop1 = new Workshop(
 workshop1.ask();
 */
 
-// ? 1. Create a constructor function called Workshop that receives a teacher and a list of students.
+? 1. Create a constructor function called Workshop that receives a teacher and a list of students.
 function Workshop(teacher, students) {
   this.teacher = teacher;
   this.students = students;
@@ -163,6 +163,6 @@ const workshop = new Workshop("Khalid", [
   "Rakib",
   "Rakibul",
 ]);
-// workshop();
+workshop();
 
 console.log(workshop);

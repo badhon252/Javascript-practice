@@ -124,45 +124,39 @@ person2.run();
 
  */
 
-/*
-function Workshop(teacher, Message) {
-  this.teacher = teacher;
-  this.msg = Message;
-  // console.log(this.teacher);
-  // console.log(this.msg);
-}
-// console.log(Workshop);
-// console.log(Workshop.constructor.name);
-Workshop.prototype.ask = function () {
-  console.log(this.teacher, "said that,", this.msg);
-};
-// console.dir(Workshop.prototype.ask);
-const workshop1 = new Workshop(
-  "Khalid",
-  "'Persistance is the key to success!'"
-);
-// Workshop.prototype.ask();
+//? 1. Create a constructor function called Workshop that receives a teacher and a list of students.
+// function Workshop(teacher, students) {
+//   this.teacher = teacher;
+//   this.students = students;
+// }
 
-// console.log(workshop1);
-workshop1.ask();
-*/
+// Workshop.prototype.ask = function () {
+//   console.log(this.teacher, this.students);
+// };
 
-// ? 1. Create a constructor function called Workshop that receives a teacher and a list of students.
-function Workshop(teacher, students) {
-  this.teacher = teacher;
-  this.students = students;
-}
-
-Workshop.prototype.ask = function () {
-  console.log(this.teacher, this.students);
-};
-
-const workshop = new Workshop("Khalid", [
-  "Badhon",
-  "Eamin",
-  "Rakib",
-  "Rakibul",
-]);
+// const workshop = new Workshop("Khalid", [
+//   "Badhon",
+//   "Eamin",
+//   "Rakib",
+//   "Rakibul",
+// ]);
 // workshop();
 
-console.log(workshop);
+// console.log(workshop);
+
+function Workshop(teacher = "You didn't pass any arguments yet!!", msg) {
+  this.teacher = teacher;
+  this.msg = msg;
+  console.log(this.teacher);
+}
+
+Workshop.prototype = {
+  ask() {
+    console.log(this.teacher, this.msg);
+  },
+};
+
+const workshop1 = new Workshop();
+// Workshop.prototype.ask();
+
+workshop1.ask("Khalid", "Hello world!");

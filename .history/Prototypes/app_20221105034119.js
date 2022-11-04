@@ -162,7 +162,7 @@ const workshop = new Workshop("Khalid", [
   "Eamin",
   "Rakib",
   "Rakibul",
-]);
-// workshop();
+// ]);
+workshop();
 
 console.log(workshop);
