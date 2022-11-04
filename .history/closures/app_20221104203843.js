@@ -62,20 +62,3 @@ function makeClosure(number) {
 // }
 
 // makeClosure();
-
-//! Practicing Scopes
-const global_scope = "hello, Global Scope!";
-let function_scope = "Hello, Function scope!";
-function x() {
-  if (true) {
-    const block_scope = "Hello, Block Scope!";
-    console.log(block_scope);
-  }
-  // console.log(block_scope)
-  console.log(function_scope);
-}
-x();
-
-console.log(global_scope);
-
-console.log(block_scope);

@@ -63,7 +63,6 @@ function makeClosure(number) {
 
 // makeClosure();
 
-//! Practicing Scopes
 const global_scope = "hello, Global Scope!";
 let function_scope = "Hello, Function scope!";
 function x() {

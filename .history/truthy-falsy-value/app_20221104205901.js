@@ -33,7 +33,7 @@ function c() {
 console.log(typeof c);
 
 let arr = [1, 2, 3];
-console.log(typeof arr);
+console.log(typeof arr;)
 
 let ar = Number(arr);
 console.log(typeof ar);
