@@ -165,4 +165,4 @@ const workshop = new Workshop("Khalid", [
 ]);
 // workshop();
 
-console.log(workshop.students[0]);
+console.log(workshop.students[2]);
