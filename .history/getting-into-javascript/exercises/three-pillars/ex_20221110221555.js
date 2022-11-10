@@ -3,12 +3,14 @@ class Bookshelf {
     this.favoriteBooks = [];
   }
 
+  //TODO: define methods `addFavoriteBook(..)`
   addFavoriteBook(bookName) {
     if (!bookName.includes("Great")) {
       this.favoriteBooks.push(bookName);
     }
   }
 
+  // and `printFavoriteBooks()`
   printFavoriteBooks() {
     console.log(`Favorite Books: ${String(this.favoriteBooks.length)}`);
     for (let bookName of this.favoriteBooks) {
@@ -18,17 +20,15 @@ class Bookshelf {
 }
 
 function loadBooks(bookSelf) {
+  // TODO: call fakeAjax( .. );
   fakeAjax(BOOK_API, function onBooks(bookNames) {
     for (let bookName of bookNames) {
-      bookSelf.addFavoriteBook(bookName);
     }
-    bookSelf.printFavoriteBooks();
   });
 }
 
 var BOOK_API = "https://some.url/api";
-let myBooks = new Bookshelf();
-loadBooks(myBooks);
+
 // ***********************
 
 // NOTE: don't modify this function at all

@@ -3,32 +3,27 @@ class Bookshelf {
     this.favoriteBooks = [];
   }
 
+  // TODO: define methods `addFavoriteBook(..)`
   addFavoriteBook(bookName) {
     if (!bookName.includes("Great")) {
-      this.favoriteBooks.push(bookName);
+      favoriteBooks.push(bookName);
     }
   }
-
+  // and `printFavoriteBooks()`
   printFavoriteBooks() {
-    console.log(`Favorite Books: ${String(this.favoriteBooks.length)}`);
-    for (let bookName of this.favoriteBooks) {
+    console.log(`Favorite Books: ${String(favoriteBooks.length)}`);
+    for (let bookName of favoriteBooks) {
       console.log(bookName);
     }
   }
 }
 
-function loadBooks(bookSelf) {
-  fakeAjax(BOOK_API, function onBooks(bookNames) {
-    for (let bookName of bookNames) {
-      bookSelf.addFavoriteBook(bookName);
-    }
-    bookSelf.printFavoriteBooks();
-  });
+function loadBooks(/* .. */) {
+  // TODO: call fakeAjax( .. );
 }
 
 var BOOK_API = "https://some.url/api";
-let myBooks = new Bookshelf();
-loadBooks(myBooks);
+
 // ***********************
 
 // NOTE: don't modify this function at all

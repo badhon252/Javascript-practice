@@ -22,13 +22,11 @@ function loadBooks(bookSelf) {
     for (let bookName of bookNames) {
       bookSelf.addFavoriteBook(bookName);
     }
-    bookSelf.printFavoriteBooks();
   });
 }
 
 var BOOK_API = "https://some.url/api";
-let myBooks = new Bookshelf();
-loadBooks(myBooks);
+
 // ***********************
 
 // NOTE: don't modify this function at all

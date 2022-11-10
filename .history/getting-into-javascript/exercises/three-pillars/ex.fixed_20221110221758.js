@@ -16,19 +16,19 @@ class Bookshelf {
     }
   }
 }
-
-function loadBooks(bookSelf) {
+var BOOK_API = "https://some.url/api";
+function loadBooks(bookshelf) {
   fakeAjax(BOOK_API, function onBooks(bookNames) {
     for (let bookName of bookNames) {
-      bookSelf.addFavoriteBook(bookName);
+      bookshelf.addFavoriteBook(bookName);
     }
-    bookSelf.printFavoriteBooks();
+    bookshelf.printFavoriteBooks();
   });
 }
 
-var BOOK_API = "https://some.url/api";
-let myBooks = new Bookshelf();
+var myBooks = new Bookshelf();
 loadBooks(myBooks);
+
 // ***********************
 
 // NOTE: don't modify this function at all

@@ -27,8 +27,7 @@ function loadBooks(bookSelf) {
 }
 
 var BOOK_API = "https://some.url/api";
-let myBooks = new Bookshelf();
-loadBooks(myBooks);
+
 // ***********************
 
 // NOTE: don't modify this function at all
