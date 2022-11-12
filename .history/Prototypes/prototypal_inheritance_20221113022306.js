@@ -28,12 +28,7 @@ class Person {
   sleep() {
     console.log(`${this.name} is sleeping`);
   }
-
-  static read(person) {
-    console.log(`${person.name} is reading`);
-  }
 }
-// Person.read();
 
 //? Prototypal Inheritance
 class Footballer extends Person {
@@ -75,9 +70,6 @@ class Programmer extends Person {
     console.log(`${this.name} is passionate about ${this.language}`);
   }
 
-  /**
-   * @param {(arg0: string) => any} name
-   */
   set lang(name) {
     this.language = name;
   }
@@ -91,9 +83,7 @@ const Badhon = new Programmer("Khalid", 2000, "JavaScript", "badhon252");
 // Badhon.passion();
 // Badhon.eat();
 // Badhon.sleep();
-// let newLang = (Badhon.lang = "python");
-// console.log(newLang);
-
+console.log(Badhon.lang);
 //? Prototypal Inheritance for WebDeveloper class
 
 class WebDeveloper extends Programmer {
@@ -104,12 +94,6 @@ class WebDeveloper extends Programmer {
   showSkills() {
     console.log(`${this.name} knows ${this.skills}`);
   }
-
-  //! Overriding the parent class method (Polymorphism)
-  passion() {
-    super.passion(); //? Calling the parent class method (Polymorphism)
-    console.log(`${this.name} is passionate about ${this.skills}`);
-  }
 }
 
 const badhon = new WebDeveloper(
@@ -117,14 +101,10 @@ const badhon = new WebDeveloper(
   2000,
   "JavaScript",
   "badhon252",
-  "Frontend Engineering!"
+  "Frontend"
 );
 
-// console.log(badhon.name);
-// badhon.showSkills();
-// console.log(badhon.github);
-// console.log(badhon.age);
-badhon.passion();
-
-// Person.read(badhon);
-// Person.read(Badhon);
+console.log(badhon.name);
+badhon.showSkills();
+console.log(badhon.github);
+console.log(badhon.age);

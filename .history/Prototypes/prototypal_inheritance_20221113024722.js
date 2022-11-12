@@ -107,7 +107,6 @@ class WebDeveloper extends Programmer {
 
   //! Overriding the parent class method (Polymorphism)
   passion() {
-    super.passion(); //? Calling the parent class method (Polymorphism)
     console.log(`${this.name} is passionate about ${this.skills}`);
   }
 }
@@ -117,7 +116,7 @@ const badhon = new WebDeveloper(
   2000,
   "JavaScript",
   "badhon252",
-  "Frontend Engineering!"
+  "Frontend"
 );
 
 // console.log(badhon.name);
