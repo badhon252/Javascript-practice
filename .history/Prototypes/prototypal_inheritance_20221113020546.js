@@ -2,24 +2,16 @@ class Person {
   //!parent class
   constructor(name, birthYear) {
     this.name = String(name);
-    // function age(birthYear) {
-    //   let date = new Date();
-    //   let currentYear = date.getFullYear();
-    //   return currentYear - birthYear;
-    //   //   console.log(currentAge);
-    // }
+    get age(birthYear) {
+      let date = new Date();
+      let currentYear = date.getFullYear();
+      return currentYear - birthYear;
+      //   console.log(currentAge);
+    }
     // this.age = Number(age);
-    this.birthYear = birthYear;
-  }
-
-  //? Getter function to get the age of the person from the birth year
-  get age() {
-    let date = new Date();
-    let currentYear = date.getFullYear();
-    let cAge = currentYear - this.birthYear;
-    //   console.log(currentAge); let cAge = age(birthYear);
+    let cAge = age(birthYear);
     // this.age = `${this.name}'s age is ${Number(cAge)}`;
-    return this.name + "'s age is : " + cAge;
+    this.age = this.name + "'s age is : " + cAge;
   }
 
   eat() {
@@ -28,12 +20,7 @@ class Person {
   sleep() {
     console.log(`${this.name} is sleeping`);
   }
-
-  static read(person) {
-    console.log(`${person.name} is reading`);
-  }
 }
-// Person.read();
 
 //? Prototypal Inheritance
 class Footballer extends Person {
@@ -74,13 +61,6 @@ class Programmer extends Person {
   passion() {
     console.log(`${this.name} is passionate about ${this.language}`);
   }
-
-  /**
-   * @param {(arg0: string) => any} name
-   */
-  set lang(name) {
-    this.language = name;
-  }
 }
 
 const Badhon = new Programmer("Khalid", 2000, "JavaScript", "badhon252");
@@ -91,8 +71,6 @@ const Badhon = new Programmer("Khalid", 2000, "JavaScript", "badhon252");
 // Badhon.passion();
 // Badhon.eat();
 // Badhon.sleep();
-// let newLang = (Badhon.lang = "python");
-// console.log(newLang);
 
 //? Prototypal Inheritance for WebDeveloper class
 
@@ -104,12 +82,6 @@ class WebDeveloper extends Programmer {
   showSkills() {
     console.log(`${this.name} knows ${this.skills}`);
   }
-
-  //! Overriding the parent class method (Polymorphism)
-  passion() {
-    super.passion(); //? Calling the parent class method (Polymorphism)
-    console.log(`${this.name} is passionate about ${this.skills}`);
-  }
 }
 
 const badhon = new WebDeveloper(
@@ -117,14 +89,10 @@ const badhon = new WebDeveloper(
   2000,
   "JavaScript",
   "badhon252",
-  "Frontend Engineering!"
+  "Frontend"
 );
 
-// console.log(badhon.name);
-// badhon.showSkills();
-// console.log(badhon.github);
-// console.log(badhon.age);
-badhon.passion();
-
-// Person.read(badhon);
-// Person.read(Badhon);
+console.log(badhon.name);
+badhon.showSkills();
+console.log(badhon.github);
+console.log(badhon.age);
