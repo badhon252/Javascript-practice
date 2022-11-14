@@ -32,6 +32,7 @@ function count() {
   //   console.log(typeof result);
   // }
 }
+
 // count();
 
 //! I have to measure the performance.now(), to check the speed of this context. For every eventlistener and functions to verify the speed of closures or callback !
@@ -68,22 +69,5 @@ function object(param1) {
   // console.log(name);
   // console.log(job);
 }
+
 // object();
-
-function Obj() {
-  let obj = {
-    name: "Khalid",
-    age: 22,
-  };
-
-  let key = Object.keys(obj);
-  console.log(key);
-
-  let value = Object.values(obj);
-  console.log(value);
-
-  let entries = Object.entries(obj);
-  console.log(entries);
-}
-
-Obj();

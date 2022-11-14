@@ -70,20 +70,11 @@ function object(param1) {
 }
 // object();
 
-function Obj() {
+function obj() {
   let obj = {
     name: "Khalid",
     age: 22,
   };
 
-  let key = Object.keys(obj);
-  console.log(key);
-
-  let value = Object.values(obj);
-  console.log(value);
-
-  let entries = Object.entries(obj);
-  console.log(entries);
+  let keys = Object.keys(obj);
 }
-
-Obj();
