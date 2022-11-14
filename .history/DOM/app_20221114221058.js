@@ -51,9 +51,9 @@ function object(param1) {
   };
   // console.log(obj);
 
-  let { name, age, job, married, hobbies, address } = obj;
+  let { name, age, job, married, hobbies, {city, country} } = obj;
 
-  const addr = Object.entries(address);
+  const addr = Object.entries(obj)
 
   console.log(
     name,

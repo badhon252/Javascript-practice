@@ -49,25 +49,11 @@ function object(param1) {
       country: "Bangladesh",
     },
   };
-  // console.log(obj);
+  console.log(obj);
 
   let { name, age, job, married, hobbies, address } = obj;
 
-  const addr = Object.entries(address);
-
-  console.log(
-    name,
-    age,
-    job,
-    married,
-    hobbies.map((item) => (item === "Reading" ? "Books" : item)),
-    addr.map((item) =>
-      item === "Dhaka" ? `Dhaka is the capital of Bangladesh` : item
-    )
-  );
-
-  // console.log(name);
-  // console.log(job);
+  console.log(name);
 }
 
 object();

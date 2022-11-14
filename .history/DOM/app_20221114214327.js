@@ -53,17 +53,17 @@ function object(param1) {
 
   let { name, age, job, married, hobbies, address } = obj;
 
-  const addr = Object.entries(address);
-
   console.log(
     name,
     age,
     job,
     married,
-    hobbies.map((item) => (item === "Reading" ? "Books" : item)),
-    addr.map((item) =>
-      item === "Dhaka" ? `Dhaka is the capital of Bangladesh` : item
-    )
+    // hobbies.map((item) => (item == "Reading" ? "Books" : "string")),
+    hobbies.map((item) => {
+      let index = item.reduce((prevVal, presentVal, index, arr) => index);
+      return item + index;
+    }),
+    address.city
   );
 
   // console.log(name);

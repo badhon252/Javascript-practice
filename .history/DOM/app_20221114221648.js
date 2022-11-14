@@ -55,16 +55,7 @@ function object(param1) {
 
   const addr = Object.entries(address);
 
-  console.log(
-    name,
-    age,
-    job,
-    married,
-    hobbies.map((item) => (item === "Reading" ? "Books" : item)),
-    addr.map((item) =>
-      item === "Dhaka" ? `Dhaka is the capital of Bangladesh` : item
-    )
-  );
+  console.log(name, age, job, married);
 
   // console.log(name);
   // console.log(job);

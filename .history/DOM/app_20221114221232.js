@@ -60,10 +60,7 @@ function object(param1) {
     age,
     job,
     married,
-    hobbies.map((item) => (item === "Reading" ? "Books" : item)),
-    addr.map((item) =>
-      item === "Dhaka" ? `Dhaka is the capital of Bangladesh` : item
-    )
+    hobbies.map((item) => (item === "Reading" ? "Books" : item))
   );
 
   // console.log(name);

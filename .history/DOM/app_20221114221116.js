@@ -53,7 +53,7 @@ function object(param1) {
 
   let { name, age, job, married, hobbies, address } = obj;
 
-  const addr = Object.entries(address);
+  const addr = Object.entries(obj);
 
   console.log(
     name,
