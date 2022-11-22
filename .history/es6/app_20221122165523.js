@@ -88,7 +88,7 @@ ws.add({
   a: 1,
   b: 2,
 });
-// console.log(ws);
+console.log(ws);
 
 class SomeClass {
   constructor() {
@@ -102,7 +102,3 @@ class SomeClass {
     }
   }
 }
-
-const obj = new SomeClass();
-// obj.method(); // Hello World
-console.log(ws);

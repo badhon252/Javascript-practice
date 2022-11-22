@@ -79,30 +79,26 @@ class SomeClass {
   }
 }
 const obj = new SomeClass();
-// obj.method();    // Hello World
+// obj.method();
 SomeClass.prototype.method(); // Hello World
 */
 
 let ws = new WeakSet();
-ws.add({
-  a: 1,
-  b: 2,
-});
+// ws.add({
+//   a: 1,
+//   b: 2,
+// });
 // console.log(ws);
 
-class SomeClass {
-  constructor() {
-    ws.add(this);
-  }
-  method() {
-    if (!ws.has(this)) {
-      throw new TypeError("Illegal invocation");
-    } else {
-      console.log("Hello World");
-    }
-  }
-}
-
-const obj = new SomeClass();
-// obj.method(); // Hello World
-console.log(ws);
+// class SomeClass {
+//   constructor() {
+//     ws.add(this);
+//   }
+//   method() {
+//     if (!ws.has(this)) {
+//       throw new TypeError("Illegal invocation");
+//     } else {
+//       console.log("Hello World");
+//     }
+//   }
+// }
