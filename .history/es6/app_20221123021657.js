@@ -14,7 +14,7 @@ console.log(age);
 
 // Reduce Method
 const totalAge = user.reduce((x, y) => x + y.age, 0);
-console.log(totalAge);
+// console.log(totalAge);/
 
 // Destructuring
 // const [first, second] = user;

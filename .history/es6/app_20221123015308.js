@@ -1,20 +1,7 @@
 const user = [
   { firstName: "Khalid", lastName: "Hossain", age: 22 },
   { firstName: "Jannatul", lastName: "Ferdows", age: 22 },
-  { firstName: "John", lastName: "Wick", age: 42 },
 ];
-
-// Map Method
-const fullName = user.map((x) => x.firstName + " " + x.lastName);
-console.log(fullName);
-
-// Filter Method
-const age = user.filter((x) => x.age < 30).map((x) => x.firstName);
-console.log(age);
-
-// Reduce Method
-const totalAge = user.reduce((x, y) => x + y.age, 0);
-console.log(totalAge);
 
 // Destructuring
 // const [first, second] = user;

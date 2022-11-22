@@ -9,7 +9,7 @@ const fullName = user.map((x) => x.firstName + " " + x.lastName);
 console.log(fullName);
 
 // Filter Method
-const age = user.filter((x) => x.age < 30).map((x) => x.firstName);
+const age = user.filter((x) => (x.age > 30 ? x.firstName : null));
 console.log(age);
 
 // Reduce Method
