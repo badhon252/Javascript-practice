@@ -104,5 +104,4 @@ class SomeClass {
 }
 
 const obj = new SomeClass();
-// obj.method(); // Hello World
-console.log(ws);
+// obj.method();    // Hello World
