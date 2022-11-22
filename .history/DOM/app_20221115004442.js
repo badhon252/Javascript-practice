@@ -72,9 +72,9 @@ function object(param1) {
 }
 // object();
 
-function Obj(parameter) {
+function Obj(object) {
   let { name, age, job, married, hobbies, address } = parameter;
-
+  object();
   console.log(name, age, job, married);
 
   // let obj = {
@@ -92,5 +92,4 @@ function Obj(parameter) {
 }
 
 Obj(object);
-
 //! Output is : undefined, need to solve this problem.

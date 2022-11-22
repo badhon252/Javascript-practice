@@ -16,7 +16,7 @@ function count() {
       );
   })();
 
-  (function decrease() {
+  function decrease() {
     // let count = 0;
     document
       .getElementById("btn1")
@@ -26,7 +26,8 @@ function count() {
           (res.innerText =
             count > 0 ? --count : "Value can't be a negetive number")
       );
-  })();
+  }
+  decrease();
   //   increase(() => typeof result);
 
   //   decrease(() => typeof result);
@@ -34,7 +35,7 @@ function count() {
   //   console.log(typeof result);
   // }
 }
-// count();
+count();
 
 //! I have to measure the performance.now(), to check the speed of this context. For every eventlistener and functions to verify the speed of closures or callback !
 
@@ -72,25 +73,20 @@ function object(param1) {
 }
 // object();
 
-function Obj(parameter) {
-  let { name, age, job, married, hobbies, address } = parameter;
+function Obj() {
+  let obj = {
+    name: "Khalid",
+    age: 22,
+  };
 
-  console.log(name, age, job, married);
+  let key = Object.keys(obj);
+  console.log(key);
 
-  // let obj = {
-  //   name: "Khalid",
-  //   age: 22,
-  // };
-  // let key = Object.keys(obj);
-  // console.log(key);
+  let value = Object.values(obj);
+  console.log(value);
 
-  // let value = Object.values(obj);
-  // console.log(value);
-
-  // let entries = Object.entries(obj);
-  // console.log(entries);
+  let entries = Object.entries(obj);
+  console.log(entries);
 }
 
-Obj(object);
-
-//! Output is : undefined, need to solve this problem.
+// Obj();

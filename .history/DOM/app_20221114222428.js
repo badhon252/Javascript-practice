@@ -4,29 +4,27 @@ function count() {
   let count = 0;
   let res = document.getElementById("res");
 
-  (function increase() {
-    document
-      .getElementById("btn")
-      .addEventListener(
-        "click",
-        () =>
-          (res.innerText = !(count < 0)
-            ? ++count
-            : "Value can't be a negetive number")
-      );
-  })();
+  function increase() {
+    document.getElementById("btn").addEventListener("click", function () {
+      let result = !(count < 0) ? ++count : "Value can't be a negetive number";
+      res.innerHTML = result;
+      console.log(result);
+      return result;
+    });
+  }
+  increase();
 
-  (function decrease() {
+  function decrease() {
     // let count = 0;
-    document
-      .getElementById("btn1")
-      .addEventListener(
-        "click",
-        () =>
-          (res.innerText =
-            count > 0 ? --count : "Value can't be a negetive number")
-      );
-  })();
+    document.getElementById("btn1").addEventListener("click", function () {
+      let result = count > 0 ? --count : "Value can't be a negetive number";
+      res.innerText = result;
+      console.log(`${result}`);
+      console.log(typeof result);
+      return result;
+    });
+  }
+  decrease();
   //   increase(() => typeof result);
 
   //   decrease(() => typeof result);
@@ -72,25 +70,14 @@ function object(param1) {
 }
 // object();
 
-function Obj(parameter) {
-  let { name, age, job, married, hobbies, address } = parameter;
+function Obj() {
+  let obj = {
+    name: "Khalid",
+    age: 22,
+  };
 
-  console.log(name, age, job, married);
-
-  // let obj = {
-  //   name: "Khalid",
-  //   age: 22,
-  // };
-  // let key = Object.keys(obj);
-  // console.log(key);
-
-  // let value = Object.values(obj);
-  // console.log(value);
-
-  // let entries = Object.entries(obj);
-  // console.log(entries);
+  let key = Object.keys(obj);
+  console.log(key);
 }
 
-Obj(object);
-
-//! Output is : undefined, need to solve this problem.
+Obj();

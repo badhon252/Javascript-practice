@@ -92,5 +92,3 @@ function Obj(parameter) {
 }
 
 Obj(object);
-
-//! Output is : undefined, need to solve this problem.
