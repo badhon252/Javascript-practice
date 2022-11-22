@@ -91,6 +91,4 @@ function Obj(parameter) {
   // console.log(entries);
 }
 
-Obj(object);
-
-//! Output is : undefined, need to solve this problem.
+Obj(object());

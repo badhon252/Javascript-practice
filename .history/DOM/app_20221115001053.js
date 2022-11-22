@@ -75,12 +75,20 @@ function object(param1) {
 function Obj(parameter) {
   let { name, age, job, married, hobbies, address } = parameter;
 
-  console.log(name, age, job, married);
-
-  // let obj = {
-  //   name: "Khalid",
-  //   age: 22,
-  // };
+  let obj = {
+    name: "Khalid",
+    age: 22,
+  };
+  console.log(
+    name,
+    age,
+    job,
+    married,
+    hobbies.map((item) => (item === "Reading" ? "Books" : item)),
+    addr.map((item) =>
+      item === "Dhaka" ? `Dhaka is the capital of Bangladesh` : item
+    )
+  );
   // let key = Object.keys(obj);
   // console.log(key);
 
@@ -92,5 +100,3 @@ function Obj(parameter) {
 }
 
 Obj(object);
-
-//! Output is : undefined, need to solve this problem.

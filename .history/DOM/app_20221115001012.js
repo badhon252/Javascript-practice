@@ -75,22 +75,19 @@ function object(param1) {
 function Obj(parameter) {
   let { name, age, job, married, hobbies, address } = parameter;
 
-  console.log(name, age, job, married);
+  let obj = {
+    name: "Khalid",
+    age: 22,
+  };
 
-  // let obj = {
-  //   name: "Khalid",
-  //   age: 22,
-  // };
-  // let key = Object.keys(obj);
-  // console.log(key);
+  let key = Object.keys(obj);
+  console.log(key);
 
-  // let value = Object.values(obj);
-  // console.log(value);
+  let value = Object.values(obj);
+  console.log(value);
 
-  // let entries = Object.entries(obj);
-  // console.log(entries);
+  let entries = Object.entries(obj);
+  console.log(entries);
 }
 
-Obj(object);
-
-//! Output is : undefined, need to solve this problem.
+Obj();
