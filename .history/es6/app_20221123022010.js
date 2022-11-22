@@ -13,7 +13,7 @@ const age = user.filter((x) => x.age < 30).map((x) => x.firstName);
 console.log(age);
 
 // Reduce Method
-const totalAge = user.reduce((x, y) => x + y.age, 0);
+const totalAge = user.reduce((x, y) => y, 0);
 console.log(totalAge);
 
 // Destructuring
