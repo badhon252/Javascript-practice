@@ -182,7 +182,7 @@ class Person {
 const khalid = new Person("Khalid Hossain", 22, 50);
 khalid.getPerson();
 
-const jannatul = new Person("Jannatul Ferdows", 22, 50);
+const jannatul = new Person("Jannatul Ferdows", 22);
 jannatul.getPerson();
 
 const john = new Person("John", 42);

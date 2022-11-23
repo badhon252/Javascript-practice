@@ -152,7 +152,7 @@ IIFE: (function x() {
   console.log("Hello World");
 })();
 */
-/*
+
 //? Map & WeakMap DataStructure
 const khalid = {
   name: "Khalid",
@@ -161,41 +161,4 @@ const khalid = {
 const myMap = new Map();
 myMap.set(khalid, khalid.name);
 let x = [...myMap];
-console.dir(x[0][0].name);
-*/
-
-//? Write a function that checks key's from object,
-// if key's are same then return fale otherwise true
-//? as a Key, Symbol() will be use for unique identifire
-
-class Person {
-  constructor(name, age, num) {
-    this.name = name;
-    this.age = age;
-    this.key = Symbol.for(num);
-  }
-
-  getPerson() {
-    console.log(`Name: ${this.name}, age: ${this.age}`);
-  }
-}
-const khalid = new Person("Khalid Hossain", 22, 50);
-khalid.getPerson();
-
-const jannatul = new Person("Jannatul Ferdows", 22, 50);
-jannatul.getPerson();
-
-const john = new Person("John", 42);
-// john.getPerson();
-
-// let bool = khalid.key === jannatul.key;
-let bool = `${khalid.key === jannatul.key ? "100% Matched" : "Not Matched"}`;
-console.dir(bool);
-
-/*
-let symbol1 = Symbol.for(50);
-let symbol2 = Symbol.for(50);
-let symbol3 = Symbol("Hello");
-console.log(symbol1 === symbol2);
-console.log(symbol3);
-*/
+console.dir(x.length);

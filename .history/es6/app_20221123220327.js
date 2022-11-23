@@ -190,7 +190,7 @@ const john = new Person("John", 42);
 
 // let bool = khalid.key === jannatul.key;
 let bool = `${khalid.key === jannatul.key ? "100% Matched" : "Not Matched"}`;
-console.dir(bool);
+// console.dir(bool);
 
 /*
 let symbol1 = Symbol.for(50);

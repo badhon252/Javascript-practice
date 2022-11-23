@@ -179,10 +179,10 @@ class Person {
     console.log(`Name: ${this.name}, age: ${this.age}`);
   }
 }
-const khalid = new Person("Khalid Hossain", 22, 50);
+const khalid = new Person("Khalid Hossain", 22);
 khalid.getPerson();
 
-const jannatul = new Person("Jannatul Ferdows", 22, 50);
+const jannatul = new Person("Jannatul Ferdows", 22);
 jannatul.getPerson();
 
 const john = new Person("John", 42);
@@ -190,12 +190,9 @@ const john = new Person("John", 42);
 
 // let bool = khalid.key === jannatul.key;
 let bool = `${khalid.key === jannatul.key ? "100% Matched" : "Not Matched"}`;
-console.dir(bool);
+// console.dir(bool);
 
-/*
 let symbol1 = Symbol.for(50);
 let symbol2 = Symbol.for(50);
-let symbol3 = Symbol("Hello");
+
 console.log(symbol1 === symbol2);
-console.log(symbol3);
-*/
