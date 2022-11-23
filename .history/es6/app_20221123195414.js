@@ -149,4 +149,4 @@ outermost: while (true) {
 
 IIFE: (function x() {
   console.log("Hello World");
-})();
+});

@@ -147,6 +147,6 @@ outermost: while (true) {
   }
 }
 
-IIFE: (function x() {
+label: function x() {
   console.log("Hello World");
-})();
+}
