@@ -260,3 +260,9 @@ console.log(gen.next().value);
 console.log(gen.next().value);
 console.log(gen.next().value);
  */
+
+function myFunction(a, n) {
+  return a.splice();
+}
+
+console.log(myFunction("India", 2));

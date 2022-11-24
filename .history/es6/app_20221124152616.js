@@ -260,3 +260,15 @@ console.log(gen.next().value);
 console.log(gen.next().value);
 console.log(gen.next().value);
  */
+
+function myFunction(a) {
+  console.log(a);
+  return typeof Math.min(a);
+}
+console.log(myFunction([0, 1, 2, 3, 4, 5])); //(3) [3, 4, 5]
+
+// const google = "https://google.com/?q=ss";
+// const url = new URL(google);
+// console.log(url);
+// console.log(url.host);
+// console.log(url.href);

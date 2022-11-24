@@ -260,3 +260,9 @@ console.log(gen.next().value);
 console.log(gen.next().value);
 console.log(gen.next().value);
  */
+
+function myFunction(a) {
+  return a;
+}
+
+console.log(myFunction(1));

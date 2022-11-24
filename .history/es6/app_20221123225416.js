@@ -178,10 +178,9 @@ let symbol4 = Symbol(1);
 console.log(symbol3 === symbol4); //! false
 */
 
-/* 
-** //? Write a function that checks key's from object,
-*** //? if key's are same then return true otherwise false
-** //? as a Key, Symbol() will be use for unique identifire
+//? Write a function that checks key's from object,
+//? if key's are same then return true otherwise false
+//? as a Key, Symbol() will be use for unique identifire
 
 class Person {
   constructor(name, age, num) {
@@ -189,74 +188,22 @@ class Person {
     this.age = age;
     this.key = Symbol.for(num);
   }
-  getKey = () => console.log(this.key);
-  getPerson = () => console.log(`Name: ${this.name}, age: ${this.age}`);
+
+  getPerson() {
+    console.log(`Name: ${this.name}, age: ${this.age}`);
+  }
 }
 const khalid = new Person("Khalid Hossain", 22, 50);
 // khalid.getPerson();
 
 const jannatul = new Person("Jannatul Ferdows", 22, 50);
-jannatul.getPerson();
-jannatul.getKey();
+// jannatul.getPerson();
 
 const john = new Person("John", 42);
 // john.getPerson();
 
 // let bool = khalid.key === jannatul.key;
 let bool = `Matched between "${khalid.name}" and "${jannatul.name}" ${
-  khalid.key === jannatul.key ? "is 100%" : "Not Matched"
+  khalid.key === jannatul.key ? "100% Matched" : "Not Matched"
 }`;
 console.dir(bool);
-*/
-
-/* console.log(jannatul); //Person {name: 'Jannatul Ferdows', age: 22, key: Symbol(50), getKey: ƒ, getPerson: ƒ}
-console.log(jannatul.age); // 22
-console.log(jannatul.key); // Symbol(50)
-console.log(jannatul.key.valueOf); // ƒ valueOf() { [native code] }
-console.log(jannatul.key.valueOf()); // Symbol(50);
-console.log(jannatul.key.toString()); // ("Symbol(50)");
-console.log(typeof jannatul.key.toString); // ("function");
- */
-// "use strict";
-/* const myMethod = Symbol("My own Symbol");
-// console.log(myMethod);
-console.dir(Array());
-Array.prototype[myMethod] = () =>
-  console.log("My own methods using Symbol from Prototype");
-
-let arr = [1, 2, 3, 4, 5];
-let arr1 = arr.map((x) => x * 2);
-
-const arrayMethods1 = arr[myMethod];
-arrayMethods1();
-const arrayMethods2 = arr1[myMethod];
-arrayMethods2();
- */
-/* 
-* //? Generator Function
-
-function* generator() {
-  yield 1;
-  yield 2;
-  yield 3;
-  yield 4;
-  yield 5;
-  yield 6;
-  yield 7;
-  yield 8;
-  yield 9;
-  yield 10;
-}
-const gen = generator();
-
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next().value);
- */

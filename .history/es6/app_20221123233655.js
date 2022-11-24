@@ -217,46 +217,12 @@ console.log(jannatul.key.valueOf()); // Symbol(50);
 console.log(jannatul.key.toString()); // ("Symbol(50)");
 console.log(typeof jannatul.key.toString); // ("function");
  */
-// "use strict";
-/* const myMethod = Symbol("My own Symbol");
+"use strict";
+const myMethod = Symbol("My own Symbol");
 // console.log(myMethod);
-console.dir(Array());
-Array.prototype[myMethod] = () =>
-  console.log("My own methods using Symbol from Prototype");
+console.log(Array());
+Array.prototype[myMethod] = () => console.log("My own Symbol from Prototype");
 
 let arr = [1, 2, 3, 4, 5];
-let arr1 = arr.map((x) => x * 2);
 
-const arrayMethods1 = arr[myMethod];
-arrayMethods1();
-const arrayMethods2 = arr1[myMethod];
-arrayMethods2();
- */
-/* 
-* //? Generator Function
-
-function* generator() {
-  yield 1;
-  yield 2;
-  yield 3;
-  yield 4;
-  yield 5;
-  yield 6;
-  yield 7;
-  yield 8;
-  yield 9;
-  yield 10;
-}
-const gen = generator();
-
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next().value);
- */
+console.log(arr[myMethod];)

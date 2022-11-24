@@ -260,3 +260,19 @@ console.log(gen.next().value);
 console.log(gen.next().value);
 console.log(gen.next().value);
  */
+
+function myFunction(a, n) {
+  let arr = [a];
+  let value = arr;
+  return value;
+}
+
+console.log(myFunction("India", 20));
+
+//? Write a function that takes a string (a) and a number (n) as argument. Return the nth character of 'a'. If 'a' is not a string or 'n' is not a number, return null.
+
+function myFunction(a, n) {
+  let arr = [a];
+  let value = arr;
+  return value;
+}

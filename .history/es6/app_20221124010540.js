@@ -232,8 +232,8 @@ arrayMethods1();
 const arrayMethods2 = arr1[myMethod];
 arrayMethods2();
  */
-/* 
-* //? Generator Function
+
+//? Generator Function
 
 function* generator() {
   yield 1;
@@ -258,5 +258,3 @@ console.log(gen.next().value);
 console.log(gen.next().value);
 console.log(gen.next().value);
 console.log(gen.next().value);
-console.log(gen.next().value);
- */

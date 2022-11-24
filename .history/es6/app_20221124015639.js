@@ -260,3 +260,11 @@ console.log(gen.next().value);
 console.log(gen.next().value);
 console.log(gen.next().value);
  */
+
+function myFunction(a, n) {
+  let arr = [a];
+  let value = arr.split(n);
+  return value;
+}
+
+console.log(myFunction("India", 20));

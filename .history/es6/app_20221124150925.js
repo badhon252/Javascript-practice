@@ -260,3 +260,12 @@ console.log(gen.next().value);
 console.log(gen.next().value);
 console.log(gen.next().value);
  */
+
+function myFunction(a) {
+  return a.splice(-3);
+}
+console.log(myFunction([0, 1, 2, 3, 4, 5])); //[
+    3,
+    4,
+    5
+]

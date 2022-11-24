@@ -232,31 +232,23 @@ arrayMethods1();
 const arrayMethods2 = arr1[myMethod];
 arrayMethods2();
  */
-/* 
-* //? Generator Function
+
+//? Generator Function
 
 function* generator() {
-  yield 1;
-  yield 2;
-  yield 3;
-  yield 4;
-  yield 5;
-  yield 6;
-  yield 7;
-  yield 8;
-  yield 9;
-  yield 10;
+  yield (++1);
 }
-const gen = generator();
 
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next().value);
- */
+const gen = generator();
+console.log(gen.next());
+console.log(gen.next());
+console.log(gen.next());
+console.log(gen.next());
+console.log(gen.next());
+console.log(gen.next());
+console.log(gen.next());
+console.log(gen.next());
+console.log(gen.next());
+console.log(gen.next());
+console.log(gen.next());
+console.log(gen.next());

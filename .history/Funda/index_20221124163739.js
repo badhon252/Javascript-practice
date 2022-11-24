@@ -324,7 +324,6 @@ reverseStr(
   "qxkpvo  f   w vdg t wqxy ln mbqmtwwbaegx   mskgtlenfnipsl bddjk znhksoewu zwh bd fqecoskmo"
 );
 
-/*
 // Remove last n characters of string
 function myFunction(a) {
   const arr = a.splice(3);
@@ -340,4 +339,3 @@ console.log(myFunction([5, 4, 3, 2, 1, 0])); // [2, 1, 0];
 // console.log(url);
 // console.log(url.host);
 // console.log(url.href);
-*/

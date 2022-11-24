@@ -260,3 +260,17 @@ console.log(gen.next().value);
 console.log(gen.next().value);
 console.log(gen.next().value);
  */
+
+function myFunction(a) {
+  const arr = a.splice(-3);
+  console.log(a);
+  return arr;
+}
+console.log(myFunction([0, 1, 2, 3, 4, 5])); //(3) [3, 4, 5]
+console.log(myFunction([1, 2, 3, 4]));
+
+// const google = "https://google.com/?q=ss";
+// const url = new URL(google);
+// console.log(url);
+// console.log(url.host);
+// console.log(url.href);

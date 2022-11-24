@@ -260,3 +260,11 @@ console.log(gen.next().value);
 console.log(gen.next().value);
 console.log(gen.next().value);
  */
+
+// function myFunction(a, n) {
+//   console.log(a.charAt(n - 1));
+// }
+// myFunction("India", 2);
+
+//? Write a function that takes a string (a) and a number (n) as argument. Return the nth character of 'a'. If 'a' is not a string or 'n' is not a number, return null.
+myFunction("abcd", 1);
