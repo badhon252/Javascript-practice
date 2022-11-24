@@ -14,7 +14,6 @@ function debounce(fn, delay) {
   };
 }
 
-/*
 //! fallback timer added
 let btn = document.getElementById("btn");
 btn.addEventListener(
@@ -31,4 +30,3 @@ function debounce(fn, delay = 200) {
     timer = setTimeout(fn, delay);
   };
 }
-*/
