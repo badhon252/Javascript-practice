@@ -294,4 +294,4 @@ function explicitBinding({ name, age }) {
 }
 
 const jannatul = explicitBinding(object);
-console.log(jannatul);
+// console.log(jannatul);

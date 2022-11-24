@@ -263,11 +263,6 @@ console.log(gen.next().value);
 */
 
 //! Operation of 'this' keyword
-const object = {
-  name: "Khalid",
-  age: 22,
-};
-
 //? Implicit binding
 class implicitBinding {
   constructor(name, age) {
@@ -284,14 +279,14 @@ khalid.getPerson();
 
 //? Explicit binding
 
-function explicitBinding({ name, age }) {
-  // const obj = {
-  //   name: name,
-  //   age: age,
-  // };
-  console.log(name, age);
+function explicitBinding(name, age) {
+  const obj = {
+    name: name,
+    age: age,
+  };
+  console.log(this.name, this.age);
   // this.getPerson = () => console.log(`Name: ${this.name}, age: ${this.age}`);
 }
 
-const jannatul = explicitBinding(object);
+const jannatul = explicitBinding("Jannatul Ferdows", 22);
 console.log(jannatul);

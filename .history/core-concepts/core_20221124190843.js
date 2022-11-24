@@ -1,4 +1,4 @@
-console.log(x); // 2-
+console.log(x); // undefined
 foo();
 bar();
 function foo() {

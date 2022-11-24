@@ -1,4 +1,5 @@
-console.log(x); // 2-
+//! Hoisting checkup
+console.log(x); // undefined
 foo();
 bar();
 function foo() {

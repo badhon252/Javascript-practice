@@ -284,7 +284,7 @@ khalid.getPerson();
 
 //? Explicit binding
 
-function explicitBinding({ name, age }) {
+function explicitBinding() {
   // const obj = {
   //   name: name,
   //   age: age,
@@ -293,5 +293,5 @@ function explicitBinding({ name, age }) {
   // this.getPerson = () => console.log(`Name: ${this.name}, age: ${this.age}`);
 }
 
-const jannatul = explicitBinding(object);
-console.log(jannatul);
+const jannatul = explicitBinding("Jannatul Ferdows", 22);
+// console.log(jannatul);

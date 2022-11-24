@@ -293,5 +293,5 @@ function explicitBinding({ name, age }) {
   // this.getPerson = () => console.log(`Name: ${this.name}, age: ${this.age}`);
 }
 
-const jannatul = explicitBinding(object);
-console.log(jannatul);
+const jannatul = explicitBinding(this.object);
+// console.log(jannatul);
