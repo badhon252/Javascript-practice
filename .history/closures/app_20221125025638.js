@@ -123,18 +123,16 @@ console.log(counter.i); // undefined (`i` is not a property of the returned obje
 // console.log(i); // ReferenceError: i is not defined (it only exists inside the closure)
 */
 
-//! Closure
-let x = "Clouser!";
-function closure() {
+//? Closure
+let x = "Hello Clouser!";
+function closure(x) {
   console.log(x);
 }
 
 function closure1() {
-  let x = "Hello ";
+  let x = "Hello Clouser!-1";
   console.log(x);
-
-  //? Because of closure, 'closure' function remember the original returned value.
-  closure();
+  closure(x);
 }
 
 closure1();
