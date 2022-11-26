@@ -25,8 +25,3 @@ const loadData = async () => {
     console.log(error);
   }
 };
-
-(async () => {
-  const data = await loadData();
-  console.log(data);
-})();

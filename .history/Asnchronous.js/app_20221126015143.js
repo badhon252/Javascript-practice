@@ -30,19 +30,3 @@ myPromise
   .then((response) => response)
   .then((resolve) => console.log(resolve))
   .catch((error) => console.log(error));
-
-//! Checking the asynchronous behaviour without 'Promise' keyword
-const loadData = async () => {
-  try {
-    const response = await fetch("https://jsonplaceholder.typicode.com/users");
-    const data = await response.json();
-    console.log(data);
-  } catch (error) {
-    console.log(error);
-  }
-};
-
-(async () => {
-  const data = await loadData();
-  console.log(data);
-})();
