@@ -79,14 +79,12 @@ oldArray(firstNumber, lastNumber);
 /**
  * @param {number[]} nums
  * @return {number}
- *! 724. Find Pivot Index javascript
- * */
-var pivotIndex = function (nums) {
-  let total = 0;
+ var pivotIndex = function (nums) {
+   let total = 0;
   let left = 0;
-
+  
   nums.forEach((el) => (total += el));
-
+  
   for (let i = 0; i < nums.length; i++) {
     if (total - left - nums[i] === left) {
       return i;
@@ -97,25 +95,20 @@ var pivotIndex = function (nums) {
 };
 
 console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+*/
 
-/**!
- * did not solved the problem using functional progamming; 
- 
 var pivotIndex = function (nums) {
   let total = 0;
   let left = 0;
 
   nums.forEach((el) => (total += el));
 
-  (function () {
-    return nums.findIndex((val, i) => {
-      console.log(nums[i]);
-      return total - left - nums[i] === left ? i : (left += nums[i]);
-    });
-  })();
-
+  function x() {
+    return nums.findIndex((i) =>
+      total - left - nums[i] === left ? i : (left += nums[i])
+    );
+  }
   return -1;
 };
 
 console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
- */

@@ -79,7 +79,6 @@ oldArray(firstNumber, lastNumber);
 /**
  * @param {number[]} nums
  * @return {number}
- *! 724. Find Pivot Index javascript
  * */
 var pivotIndex = function (nums) {
   let total = 0;
