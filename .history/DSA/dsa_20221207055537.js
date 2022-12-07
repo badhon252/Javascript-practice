@@ -138,24 +138,13 @@ console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
 // ]);
 
 function myAtoi(s) {
-    var result = 0,
-        ch = s.charAt(0),
-        i = 1,
-        digit;
+    var i = 0;
+    var n = s.length;
+    var num = 0;
 
-    while (i <= s.length) {
-        digit = s.charAt(i++);
-
-        result = result * 10 + digit;
+    while (i < n) {
+        num = num * 10 + s.charCodeAt(i);
+        i++;
     }
-
-    result = Math.round(result);
-
-    if (result < 0) {
-        result = -result;
-    }
-
-    return result;
+    return num;
 }
-
-console.log(myAtoi("123"));
