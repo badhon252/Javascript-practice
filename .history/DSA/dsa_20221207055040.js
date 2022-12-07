@@ -81,19 +81,19 @@ oldArray(firstNumber, lastNumber);
  * @return {number}
  *! 724. Find Pivot Index javascript
  * */
-var pivotIndex = function(nums) {
-    let total = 0;
-    let left = 0;
+var pivotIndex = function (nums) {
+  let total = 0;
+  let left = 0;
 
-    nums.forEach((el) => (total += el));
+  nums.forEach((el) => (total += el));
 
-    for (let i = 0; i < nums.length; i++) {
-        if (total - left - nums[i] === left) {
-            return i;
-        }
-        left += nums[i];
+  for (let i = 0; i < nums.length; i++) {
+    if (total - left - nums[i] === left) {
+      return i;
     }
-    return -1;
+    left += nums[i];
+  }
+  return -1;
 };
 
 console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
@@ -120,42 +120,19 @@ var pivotIndex = function (nums) {
 console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
  */
 
-// function spiralMatrix(matrix) {
-//     var result = [];
+function spiral(matrix) {
+  var result = [];
 
-//     for (var i = 1; i <= matrix; ++i) {
-//         for (var j = 1; j <= n; ++j) {
-//             result.push(matrix[i][j]);
-//         }
-//     }
-
-//     return result;
-// }
-// spiralMatrix([
-//     [1, 2, 3, 4],
-//     [5, 6, 7, 8],
-//     [9, 10, 11, 12],
-// ]);
-
-function myAtoi(s) {
-    var result = 0,
-        ch = s.charAt(0),
-        i = 1,
-        digit;
-
-    while (i <= s.length) {
-        digit = s.charAt(i++);
-
-        result = result * 10 + digit;
+  for (var i = 1; i <= m; ++i) {
+    for (var j = 1; j <= n; ++j) {
+      result.push(matrix[i][j]);
     }
+  }
 
-    result = Math.round(result);
-
-    if (result < 0) {
-        result = -result;
-    }
-
-    return result;
+  return result;
 }
-
-console.log(myAtoi("123"));
+spiralMatrix([
+  [1, 2, 3, 4],
+  [5, 6, 7, 8],
+  [9, 10, 11, 12],
+]);

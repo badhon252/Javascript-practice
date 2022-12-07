@@ -157,5 +157,3 @@ function myAtoi(s) {
 
     return result;
 }
-
-console.log(myAtoi("123"));
