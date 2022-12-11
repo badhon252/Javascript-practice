@@ -76,7 +76,7 @@ Person.info;
 
 console.log(Function);
  */
-/* 
+
 let person = {
   person1: {
     name: "Badhon",
@@ -107,45 +107,10 @@ Function.prototype.myBind = function (...args) {
 
 let printMyName2 = printName.myBind(person.person2, "Bakergonj", "Barishal");
 printMyName2("Bangladesh");
- */
 
-// Write a function that takes a string and returns the number (count) of vowels in the string.
-// Example: getCount("abracadabra") -> 5
-
-function getCount(str) {
-  let vowelsCount = 0;
-  let vowels = ["a", "e", "i", "o", "u"];
-  for (let i = 0; i < str.length; i++) {
-    if (vowels.includes(str[i])) {
-      vowelsCount++;
-    }
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const array2 = array.reduce((x, y) => {
+  if (x < y) {
+    return x;
   }
-  return vowelsCount;
-}
-console.log(getCount("Khalid Hossain Badhon"));
-
-// Write a function that sort any array using sort method
-// Example: sortArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) -> [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
-
-function sortArray(arr) {
-  return arr.sort((a, b) => b - a);
-}
-// console.log(sortArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
-
-//! Write a function that can sort any array without sort mfethod
-// Didn't finished yet
-function sortArray2(arr) {
-  let newArr = [];
-  for (let i = 0; i < arr.length; i++) {
-    let min = arr[i];
-    for (let j = i; j < arr.length; j++) {
-      if (arr[j] < min) {
-        min = arr[j];
-      }
-    }
-    newArr.push(min);
-  }
-  return newArr;
-}
-
-console.table(sortArray2([1, 2, 3, 4, 11, 5, 7, 6, 10]));
+});
