@@ -122,30 +122,4 @@ function getCount(str) {
   }
   return vowelsCount;
 }
-console.log(getCount("Khalid Hossain Badhon"));
-
-// Write a function that sort any array using sort method
-// Example: sortArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) -> [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
-
-function sortArray(arr) {
-  return arr.sort((a, b) => b - a);
-}
-// console.log(sortArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
-
-//! Write a function that can sort any array without sort mfethod
-// Didn't finished yet
-function sortArray2(arr) {
-  let newArr = [];
-  for (let i = 0; i < arr.length; i++) {
-    let min = arr[i];
-    for (let j = i; j < arr.length; j++) {
-      if (arr[j] < min) {
-        min = arr[j];
-      }
-    }
-    newArr.push(min);
-  }
-  return newArr;
-}
-
-console.table(sortArray2([1, 2, 3, 4, 11, 5, 7, 6, 10]));
+console.log(getCount("abracadabra"));
