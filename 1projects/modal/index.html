@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://www.computerhope.com/jargon/j/javascript.png" type="image/x-icon">
+    <title>Modal</title>
+</head>
+
+<body>
+
+    <div id="modal">
+        <button class="open-modal btn">Open Modal</button>
+
+        <div class="modal-content">
+            <div class="modal-header"><img src="https://www.computerhope.com/jargon/j/javascript.png" alt="">
+                <h2> Modal Header</h2>
+                <span class="close-modal close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the Modal Body</p>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quas architecto mollitia deleniti consequatur quis earum? Dolorem officiis tempora molestias labore velit ipsa, quo corporis dicta, nobis libero, quae tenetur! </p>
+            </div>
+            <div class="modal-footer">
+                <h3>Modal Footer</h3>
+            </div>
+        </div>
+
+        <div class="active" id="overlay"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
