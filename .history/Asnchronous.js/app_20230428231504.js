@@ -1,4 +1,4 @@
-import { get } from "axios";
+import { get } from 'axios';
 
 /* //! Checking the asynchronous behaviour using 'async & await' keyword
  function run() {
@@ -49,24 +49,12 @@ const loadData = async () => {
   console.log(data);
 })();
 
-//! Using axios
-get("https://jsonplaceholder.typicode.com/posts/1")
-  .then((response) => {
+
+
+get('https://jsonplaceholder.typicode.com/posts/1')
+  .then(response => {
     console.log(response.data);
   })
-  .catch((error) => {
+  .catch(error => {
     console.error(error);
   });
-
-// Axios with modern javascript
-async function getApiData() {
-  try {
-    const response = await axios.get(
-      "https://jsonplaceholder.typicode.com/posts/1"
-    );
-    console.log(response.data);
-  } catch (error) {
-    console.error(error);
-  }
-}
-getApiData();
